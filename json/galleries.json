@@ -1,0 +1,321 @@
+[
+	
+	{
+		"galleryType": "UV",
+		"galleryId": "VisionaryArt",
+		"name": "Visionary/Math-based Art",
+		"imageUrl": "img/art/uv/fishpond.JPG",
+		"collection": [
+			{
+				"url": "img/art/uv/fishpond.JPG",
+				"title": "Fishpond"
+			},{
+				"url": "img/art/uv/unicornLight.png",
+				"title": "Unicorn Splash"
+			},{
+				"url": "img/art/uv/alienLotus.png",
+				"title": "Alien Lotus"
+			},{
+				"url": "img/art/uv/NoWorries.png",
+				"title": "No Worries, I'm Friendl-eye"
+			},{
+				"url": "img/art/uv/copula-shroom.png",
+				"title": "Copulashroom"
+			},{
+				"url": "img/art/uv/Amoeb-eye.png",
+				"title": "Amoebeye"
+			},{
+				"url": "img/art/uv/starSpinner.png",
+				"title": "Star Spinner"
+			},{
+				"url": "img/art/uv/reflectingFrog.png",
+				"title": "Reflecting Frog"
+			},{
+				"url": "img/art/uv/dreamscape.png",
+				"title": "Dreamscapes"
+			},{
+				"url": "img/art/uv/dnaSnake.png",
+				"title": "DNA Snake"
+			},{
+				"url": "img/art/uv/sacredFlowers.png",	
+				"title": "Sacred Flowers"
+			},{
+				"url": "img/art/uv/potleafButterfly.png",	
+				"title": "Poterfly"
+			},{
+				"url": "img/art/uv/treeOfLife.png",	
+				"title": "Tree Of Life"
+			},{
+				"url": "img/art/uv/spiderant.png",
+				"title": "Spider Ant"
+			},{
+				"url": "img/art/uv/splash.png",	
+				"title": "Splash"
+			}
+		]
+	},
+	{
+		"galleryType": "Traditional",
+		"galleryId": "VisionaryArt",
+		"name": "Visionary/Math-based Art",
+		"imageUrl": "img/art/Traditional/sacredG/starFlower.png",
+		"collection": [
+			{
+				"url": "img/art/Traditional/sacredG/silverTides.png",
+				"title": "Silver Tides"
+			},{
+				"url": "img/art/Traditional/sacredG/starFlower.png",
+				"title": "Star Flower"
+			},{
+				"url": "img/art/Traditional/sacredG/Buttermoth.png",
+				"title": "Buttermoth"
+			},{
+				"url": "img/art/Traditional/sacredG/boxes.png",
+				"title": "Boxes"
+			},{
+				"url": "img/art/Traditional/sacredG/slugbug.png",
+				"title": "Slug Bug"
+			},{
+				"url": "img/art/Traditional/sacredG/morningStar.png",
+				"title": "Morning Star"
+			},{
+				"url": "img/art/Traditional/sacredG/pollinators.png",
+				"title": "Pollinators"
+			},{
+				"url": "img/art/Traditional/sacredG/Lollypop.png",
+				"title": "Lollypop"
+			},{
+				"url": "img/art/Traditional/sacredG/gardenscape.png",
+				"title": "Gardenscape"
+			}		
+		]
+	},
+	{
+		"galleryType": "Traditional",
+		"galleryId": "Portraits",
+		"name": "Portraits",
+		"imageUrl": "http://fc06.deviantart.net/fs70/i/2010/015/b/7/Sarah_by_daemonink.jpg",
+		"collection": [
+			{
+				"url": "http://fc06.deviantart.net/fs70/i/2010/015/b/7/Sarah_by_daemonink.jpg",
+				"title": "Sarah"
+			},{
+				"url": "http://fc09.deviantart.net/fs51/i/2009/318/c/e/Walking_Away_by_daemonink.jpg",
+				"title": "Walking Away"
+			},{
+				"url": "https://m1.behance.net/rendition/modules/14038315/hd/983aafb234b54a54e4a8719fa9f93515.JPG",
+				"title": "Coop"
+			},{
+				"url": "https://m1.behance.net/rendition/modules/14038317/hd/c39ce1bfb2a564a239ecf6e89532d2f2.JPG",
+				"title": "Leather"
+			},{
+				"url": "https://m1.behance.net/rendition/modules/14038319/hd/2d9235420f3b148308f9768a1de342d6.JPG",
+				"title": "Kristeen"
+			},{
+				"url": "https://m1.behance.net/rendition/modules/14038321/hd/f4749dcd4e540d0dab4b2b47345b398a.jpg",
+				"title": ""
+			}
+		]
+	},
+	{
+		"galleryType": "Traditional",
+		"galleryId": "Drawings",
+		"name": "Drawings",
+		"imageUrl": "http://fc06.deviantart.net/fs51/i/2009/288/7/c/Flutterby_by_daemonink.jpg",
+		"collection": [
+			{
+				"url": "http://fc05.deviantart.net/fs50/i/2009/318/8/b/Dragon_Fish_by_daemonink.jpg",
+				"title": "Dragon Fish"
+			},{
+				"url": "http://fc06.deviantart.net/fs51/i/2009/288/7/c/Flutterby_by_daemonink.jpg",
+				"title": "Flutterby"
+			},{
+				"url": "http://fc04.deviantart.net/fs51/i/2009/288/1/8/Different_Worlds_by_daemonink.jpg",
+				"title": "Different Worlds"
+			},{
+				"url": "http://fc02.deviantart.net/fs50/i/2009/288/b/7/Dragon_Hole_by_daemonink.jpg",
+				"title": "Dragon Hole"
+			},{
+				"url": "http://fc09.deviantart.net/fs26/i/2008/171/0/3/Three_Moths_by_daemonink.jpg",
+				"title": "Three Moths"
+			},{
+				"url": "http://fc04.deviantart.net/fs27/f/2008/171/1/e/Motorcycle_Chick_by_daemonink.jpg",
+				"title": "Live to Ride, Ride to Live"
+			},{
+				"url": "http://fc09.deviantart.net/fs51/i/2009/318/6/3/Horse_Dragon_by_daemonink.jpg",
+				"title": "Horse Dragon"
+			},{
+				"url": "http://fc08.deviantart.net/fs50/i/2009/318/b/8/Arachnaphobe_by_daemonink.jpg",
+				"title": "Arachnaphobe"
+			},{
+				"url": "http://fc01.deviantart.net/fs51/i/2009/318/0/0/Silly_Bear_by_daemonink.jpg",
+				"title": "Silly Bear"
+			},{
+				"url": "http://fc01.deviantart.net/fs29/i/2008/172/4/1/Cross_with_Skull_by_daemonink.jpg",
+				"title": "Cross with Skull"
+			},{
+				"url": "http://fc09.deviantart.net/fs26/i/2008/171/b/c/Three_Flowers_by_daemonink.jpg",
+				"title": "Three Flowers"
+			}			
+		]
+	},
+	{
+		"galleryType": "Traditional",
+		"galleryId": "NaturePaintings",
+		"name": "Nature Paintings",
+		"imageUrl": "https://m1.behance.net/rendition/modules/14041619/disp/8c5c5f3d7014a61cbacd8a16bdd9b10b.JPG",
+		"collection": [
+			{
+				"url": "https://m1.behance.net/rendition/modules/14041617/disp/5f5002fab7f9b11f74bb23afb83df3c7.jpg",
+				"title": "Folliage"
+			},{
+				"url": "https://m1.behance.net/rendition/modules/14041619/disp/8c5c5f3d7014a61cbacd8a16bdd9b10b.JPG",
+				"title": "Frog"
+			},{
+				"url": "https://m1.behance.net/rendition/modules/14041621/hd/32d89ea82e3580b18a0c3d877bb88781.jpg",
+				"title": "Moonflower"
+			},{
+				"url": "https://m1.behance.net/rendition/modules/14041623/disp/b149033e85518226f51f053e60a202c8.jpg",
+				"title": "The Last Leaf"
+			},{
+				"url": "https://m1.behance.net/rendition/modules/14041625/disp/dbd6ef24c9bca92339ecc0ad57028a4d.jpg",
+				"title": "Winter Tree"
+			},{
+				"url": "http://fc05.deviantart.net/fs70/i/2011/118/3/7/lunar_moth_by_daemonink-d3f3h0v.jpg",
+				"title": "Lunar Moth"
+			},{
+				"url": "http://fc07.deviantart.net/fs70/i/2011/118/c/b/wild_blueberries_by_daemonink-d3f3gur.jpg",
+				"title": "Blueberries"
+			}	
+		]
+	},
+	{
+		"galleryType": "GameSprites",
+		"galleryId": "2DGameArt",
+		"name": "2D Game Art",
+		"imageUrl": "img/art/2d/beeTile.png",
+		"collection": [
+			{
+				"url": "img/art/2d/babyPet.png",
+				"title": "Orbo the baby Pet"
+			},{
+				"url": "img/art/2d/dodge.png",
+				"title": "Dodgeball"
+			},{
+				"url": "img/art/2d/beeTile.png",
+				"title": "Bee Game"
+			},{
+				"url": "img/art/2d/hacker.png",
+				"title": "Hacker"
+			},{
+				"url": "img/art/2d/jail.png",
+				"title": "jail"
+			},{
+				"url": "img/art/2d/pumpkin.png",
+				"title": "Pumpkin Smash"
+			},{
+				"url": "img/art/2d/racer.png",
+				"title": "Racer"
+			},{
+				"url": "img/art/2d/robot.png",
+				"title": "Robot"
+			},{
+				"url": "http://fc00.deviantart.net/fs71/f/2013/002/b/7/beholder_by_daemonink-d5q7qjq.png",
+				"title": "Eye of the Beholder"
+			},{
+				"url": "http://fc04.deviantart.net/fs70/i/2014/190/7/b/graemelin_by_daemonink-d5q7q6i.png",
+				"title": "Graemelin"
+			}	
+		]
+	},
+	{
+		"galleryType": "Traditional",
+		"galleryId": "tarot",
+		"name": "Tarot Cards",
+		"imageUrl": "http://th07.deviantart.net/fs71/PRE/i/2010/327/d/b/00_fool_by_daemonink-d33heae.jpg",
+		"collection": [
+			{
+				"url": "http://th07.deviantart.net/fs71/PRE/i/2010/327/d/b/00_fool_by_daemonink-d33heae.jpg",
+				"title": "0 - Fool"
+			},{
+				"url": "http://th01.deviantart.net/fs71/PRE/i/2010/327/5/a/01_mage_by_daemonink-d33hedt.jpg",
+				"title": "1 - Mage"
+			}, {
+				"url": "http://th05.deviantart.net/fs70/PRE/i/2010/327/f/3/02_priestess_by_daemonink-d33heh7.jpg",
+				"title": "2 - Priestess"
+			},{
+				"url": "http://th04.deviantart.net/fs71/PRE/i/2010/327/a/c/03_empress_by_daemonink-d33hel7.jpg",
+				"title": "3 - Empress"
+			},{
+				"url": "http://th09.deviantart.net/fs71/PRE/i/2010/327/f/f/04_emperor_by_daemonink-d33heoq.jpg",
+				"title": "4 - Emperor"
+			},{
+				"url": "http://th03.deviantart.net/fs70/PRE/i/2010/327/b/f/05_shaman_by_daemonink-d33het8.jpg",
+				"title": "5 - Shaman"
+			},{
+				"url": "http://th00.deviantart.net/fs71/PRE/i/2010/327/6/8/06_lovers_by_daemonink-d33hexi.jpg",
+				"title": "6 - Lovers"
+			},{
+				"url": "http://th08.deviantart.net/fs71/PRE/i/2010/327/5/4/07_chariot_by_daemonink-d33hf20.jpg",
+				"title": "7 - Chariot"
+			},{
+				"url": "http://th09.deviantart.net/fs71/PRE/i/2010/327/8/5/08_strength_by_daemonink-d33hfbu.jpg",
+				"title": "8 - Strength"
+			},{
+				"url": "http://th02.deviantart.net/fs71/PRE/i/2010/327/8/d/09_hermit_by_daemonink-d33hfef.jpg",
+				"title": "9 - Hermit"
+			},{
+				"url": "http://th05.deviantart.net/fs70/PRE/i/2010/328/7/9/10_fortuna_by_daemonink-d33ie46.jpg",
+				"title": "10 - Fortuna"
+			},{
+				"url": "http://th03.deviantart.net/fs71/PRE/i/2010/328/0/a/12_traitor_by_daemonink-d33ieh7.jpg",
+				"title": "12 - Traitor"
+			},{
+				"url": "http://th04.deviantart.net/fs70/PRE/i/2010/328/2/3/13_rebirth_by_daemonink-d33iell.jpg",
+				"title": "13 - Rebirth"
+			},{
+				"url": "http://th06.deviantart.net/fs71/PRE/i/2010/328/8/5/14_alchemy_by_daemonink-d33ieqo.jpg",
+				"title": "14 - Alchemy"
+			},{
+				"url": "http://th02.deviantart.net/fs70/PRE/i/2010/328/8/d/15_loki_by_daemonink-d33ieyp.jpg",
+				"title": "15 - Loki"
+			},{
+				"url": "http://th00.deviantart.net/fs71/PRE/i/2010/328/a/0/16_tower_by_daemonink-d33ifgk.jpg",
+				"title": "16 - Tower"
+			},{
+				"url": "http://th03.deviantart.net/fs70/PRE/i/2010/328/a/c/17_star_by_daemonink-d33ifkg.jpg",
+				"title": "17 - Star"
+			},{
+				"url": "http://th06.deviantart.net/fs71/PRE/i/2010/328/2/f/18_moon_by_daemonink-d33ifqu.jpg",
+				"title": "18 - Moon"
+			},{
+				"url": "http://th00.deviantart.net/fs71/PRE/i/2010/328/1/1/19_sun_by_daemonink-d33ifv6.jpg",
+				"title": "19 - Sun"
+			},{
+				"url": "http://th05.deviantart.net/fs71/PRE/i/2010/328/a/7/20_aeon_by_daemonink-d33ifz0.jpg",
+				"title": "20 - Aeon"
+			},{
+				"url": "http://th03.deviantart.net/fs71/PRE/i/2010/328/9/a/21_universe_by_daemonink-d33ig3c.jpg",
+				"title": "21 - Universe"
+			},{
+				"url": "http://th03.deviantart.net/fs71/PRE/i/2010/328/2/5/deck_back_by_daemonink-d33ig6g.jpg",
+				"title": "Deck Back"
+			}	
+		]
+	},
+	{
+		"galleryType": "GameSprites",
+		"galleryId": "3DGameArt",
+		"name": "3D Game Art",
+		"imageUrl": "img/art/3d/airship.png",
+		"collection": [
+			{
+				"url": "img/art/3d/airship.png",
+				"title": "space shuttle"
+			}
+			
+		]
+	}
+
+
+]

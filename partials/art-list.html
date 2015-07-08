@@ -1,0 +1,20 @@
+<div>
+	<div id="galleryList">
+		<span ng-repeat="gallery in galleries" id="galleries" ng-show="gallery.galleryType == partialChoice">
+			<img src="{{gallery.imageUrl}}" ng-click="SelectGallery(gallery)" class="galleryThumb"></img>
+		</span>
+	</div>
+
+	<div class="summary">
+		<div class="gallery">
+			<span ng-repeat="item in gallery.collection">
+				<img class="thumb" ng-src="{{item.url}}" ng-click="setImage(item)"></img>
+			</span>
+		</div>
+		<div id="showImageDiv">
+			<h3>{{showImage.title}}</h3>
+			<img class="showImg" src={{showImage.url}}></img>
+		</div>		
+	</div>
+
+</div>

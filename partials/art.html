@@ -1,0 +1,37 @@
+<div ng-controller="ArtCtrl">
+  <div id="subNavBar">
+      <div class="btn-group">
+          <button type="button" class="btn btn-inverse" ng-click="choosePartial($event, 'UV')">UV/Blacklight</button>
+          <button type="button" class="btn btn-inverse" ng-click="choosePartial($event, 'GameSprites')">Game Art</button>
+          <button type="button" class="btn btn-inverse" ng-click="choosePartial($event, 'Traditional')">Traditional Artwork</button>
+          <button type="button" class="btn btn-inverse" ng-click="choosePartial($event, 'Blog')">Blog</button>
+          <button type="button" class="btn btn-inverse" ng-click="choosePartial($event, 'About')">About</button>
+      </div>
+  </div>
+
+  <div>
+    <div ng-show="partialChoice == 'UV'">
+      <span class="st_sharethis" st_url="http://www.macpeters.com" st_title="Macpeters UV Artwork"></span>
+      <div ng-include src="'partials/art-list.html'"></div>
+    </div>
+
+    <div ng-show="partialChoice == 'GameSprites'">
+      <div ng-include src="'partials/art-list.html'"></div>
+    </div>
+
+    <div ng-show="partialChoice == 'Traditional'">
+      <div ng-include src="'partials/art-list.html'"></div>
+    </div>
+
+    <div ng-show="partialChoice == 'Blog'">
+      <div id="blogFrame">   
+        <iframe src="http://macpetersart.wordpress.com/" width=60% height="1000" frameborder="0" scrolling="yes"> </iframe> 
+      </div>
+    </div>
+
+    <div ng-show="partialChoice == 'About'">
+      <div ng-include src="'partials/about-artist.html'"></div>
+    </div>
+
+  </div>
+</div>

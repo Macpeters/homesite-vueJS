@@ -1,0 +1,72 @@
+/*------NAV BAR-----*/
+#navBar{
+  background: #000;
+  width:100%;
+}
+
+#navBar ul{
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+}
+
+#navBar li{
+    width: 100%;
+    display: inline;
+}
+
+#navBar a{
+    margin-left:1em;
+    float:left;
+    
+}
+#navBar a:hover{
+  text-decoration: none
+}
+
+
+/*-----CONTENT------*/
+
+.article {
+    width: 80%;
+    float: right;
+}
+
+.sidebar {
+    width: 20%;
+    float: left;
+    background-color: #ff0000;
+}
+
+.sidebar ul{
+    width: 100%;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    list-style: none;
+}
+
+.sidebar button{
+    display: block;
+    font-size: 1.5em;
+}
+
+/*------FOOTER------*/
+ .sidebar__chickletsa{
+  color: white;
+  padding-left: 4em;
+  background: #00ff00;
+ }
+.sidebar__chicklets a img{
+  width:32px;
+  height:32px;
+  border-width: 0.1em;
+  border-style: ridge;
+  border-color: #000000;
+  display: inline;
+}
+.sidebar__chicklets a img:hover{
+  border-color: #ffffff;
+}
+

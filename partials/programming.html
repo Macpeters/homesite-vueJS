@@ -1,16 +1,16 @@
 <div ng-controller="ProgrammingCtrl">
-  <div id="subNavBar"> 
-    <div class="btn-group">
-      <button type="button" class="btn btn-inverse" ng-click="choosePartial($event, 1)">Demo Reel</button>
-      <button type="button" class="btn btn-inverse" ng-click="choosePartial($event, 2)">Resume</button>
-      <button type="button" class="btn btn-inverse" ng-click="choosePartial($event, 3)">Games</button>
-      <button type="button" class="btn btn-inverse" ng-click="choosePartial($event, 4)">Blog</button>
-    </div>
+  <div class="sidebar"> 
+    <ul>
+      <li><button type="button" class="btn btn-inverse" ng-click="choosePartial($event, 1)">Demo Reel</button></li>
+      <li><button type="button" class="btn btn-inverse" ng-click="choosePartial($event, 2)">Resume</button></li>
+      <li><button type="button" class="btn btn-inverse" ng-click="choosePartial($event, 3)">Games</button></li>
+      <li><button type="button" class="btn btn-inverse" ng-click="choosePartial($event, 4)">Blog</button></li>
+    </ul>
     <hr></hr>
   </div>
 
 
-  <div>
+  <div class="article">
     <div ng-show="partialChoice == 1">
       <div ng-include src="'partials/demoReel.html'"></div>
     </div>    
@@ -24,7 +24,7 @@
 
     <div ng-show="partialChoice == 4">
       <div id="blogFrame">   
-        <iframe src="http://maryannepeters.wordpress.com/" width=60% height="1000" frameborder="0" scrolling="yes"> </iframe> 
+        <iframe src="http://maryannepeters.wordpress.com/" width=100% height="1000" frameborder="0" scrolling="yes"> </iframe> 
       </div>
     </div>
   </div>

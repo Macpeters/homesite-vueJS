@@ -1,33 +1,29 @@
-/*------NAV BAR-----*/
-#navBar{
+.shaded_dark {
   background: #000;
-  width:100%;
+  color: #ffffff;
 }
-
+.shaded_light {
+  background-color: #dddddd;
+}
+/*------NAV BAR-----*/
 #navBar ul{
-  list-style-type: none;
-  margin: 0;
-  padding: 0;
   overflow: hidden;
 }
-
 #navBar li{
-    width: 100%;
     display: inline;
 }
-
 #navBar a{
     margin-left:1em;
     float:left;
-    
+    color: #ffffff; 
 }
 #navBar a:hover{
-  text-decoration: none
+  text-decoration: none;
+  color: #cccccc;
 }
 
 
 /*-----CONTENT------*/
-
 .article {
     width: 80%;
     float: right;
@@ -36,7 +32,7 @@
 .sidebar {
     width: 20%;
     float: left;
-    background-color: #ff0000;
+    /*background-color: #dddddd;*/
 }
 
 .sidebar ul{
@@ -50,13 +46,14 @@
 .sidebar button{
     display: block;
     font-size: 1.5em;
+    width: 100%;
 }
 
 /*------FOOTER------*/
  .sidebar__chickletsa{
   color: white;
   padding-left: 4em;
-  background: #00ff00;
+/*  background: #dddddd;*/
  }
 .sidebar__chicklets a img{
   width:32px;

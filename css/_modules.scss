@@ -7,7 +7,6 @@
   background: -o-linear-gradient(top, #E1E1E1 0%,#A7A7A7 100%); 
   color: #636363;
 }
-
 #stpulldown .stpulldown-logo{
   height: 40px;
   width: 300px;
@@ -16,11 +15,23 @@
   background:url("../img/macpeters_logo.png") no-repeat;
 }
 
+/*---Media Card--*/
+.mediaCard{
+  display: inline-block;
+}
+.mediaCard img{
+  max-height:150px;
+  max-width:150px;
+}
+.mediaCard .mediaHeading{
+  font-weight: bold;
+  font-size: 1.5em;
+}
 
 /*-----BLOG-------*/
-#blogFrame{
+.embedFrame{
   width: 100%;
-  height: 1000px
+  height: auto;
 }
 
 
@@ -28,28 +39,16 @@
 .workName{
   padding-left: 2em;
 }
-.resumeContent{
-  color: #000000;
-}
 .mainHeading{
   font-size: 2em;
   font-weight: bold;
-  text-align: center;
   display: block;
-  width: 35%;
-  margin-top: 1em;
-  padding: 0.5em;
-  background-color: #aaaaaa;
 }
 .subHeading{
-  width: 65%;
   font-weight: bold;
-  text-align: left;
   padding: 0.5em;
-  background-color: #cccccc;
 }
 .bulletList{
-  width: 65%;
   text-align: left;
 }
 .bulletList li{
@@ -61,40 +60,10 @@
 .galleryList{
   padding: 1em;
   padding-left: 4em;
-  background: #888888;
 }
-
-.galleryThumb{
+.galleryList img{
   width: 64px;
   height: 64px;
-}
-
-.gallery{
-  width: 100%;
-  display:inline;
-  padding-left: 4em;
-  text-align: center;
-  background: #aaaaaa;
-}
-.gallery img{
-  float:left;
-  height:3.2em;
-  width: 3.2em;
-}
-#showImageDiv{
-  width: 80%;
-  padding: 4em;
-  max-width: 80%;
-}
-.showImageDiv img{
-  display: inline-block;
-  max-width:90%;
-  max-height:450px;
-  width: auto;
-  height: auto;
-  border-style: ridge;
-  border-width: 0.2em;
-  border-color: #000000;
 }
 #artist_statement{
   width: 80%;
@@ -106,7 +75,6 @@
 .shopImage {
   max-height:150px;
   max-width:150px;
-  
 }
 
 /*----DEV CONTENT----*/

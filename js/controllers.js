@@ -10,15 +10,6 @@ function ArtCtrl($scope, $http){
 	$scope.partialChoice = "UV";
 	$scope.aboutChoice = 1;
 
-	$scope.chooseAbout = function(event, part){
-		event.preventDefault();
-		$scope.aboutChoice = part;
-	};
-
-	$scope.whichAbout = function(part){
-		return $scope.aboutChoice == part;
-	};
-
 	$scope.setImage = function(imageUrl){
 		$scope.showImage = imageUrl;
 	};
@@ -46,8 +37,10 @@ function ArtCtrl($scope, $http){
 		$scope.setImage(gallery.collection[0]);
 	};
 
-	$scope.whichPartial = function(part){
-		return $scope.partialChoice == part;
+	$scope.showGallery = function(partial){
+		return $scope.partialChoice == "UV" ||
+						$scope.partialChoice == "GameSprites" || 
+						$scope.partialChoice == "Traditional";
 	};
 }
 

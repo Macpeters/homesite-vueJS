@@ -1,5 +1,5 @@
 <div ng-controller="ProgrammingCtrl">
-  <div class="sidebar"> 
+  <div class="sidebar shaded_light"> 
     <ul>
       <li><button type="button" class="btn btn-inverse" ng-click="choosePartial($event, 1)">Demo Reel</button></li>
       <li><button type="button" class="btn btn-inverse" ng-click="choosePartial($event, 2)">Resume</button></li>
@@ -9,21 +9,20 @@
     <hr></hr>
   </div>
 
-
   <div class="article">
     <div ng-show="partialChoice == 1">
-      <div ng-include src="'partials/demoReel.html'"></div>
+      <div ng-include src="'partials/dev_demoReel.html'"></div>
     </div>    
     <div ng-show="partialChoice == 2">
-      <div ng-include src="'partials/resume.html'"></div>
+      <div ng-include src="'partials/dev_resume.html'"></div>
     </div>    
 
     <div ng-show="partialChoice == 3">
-      <div ng-include src="'partials/devProjects.html'"></div>
+      <div ng-include src="'partials/dev_projects.html'"></div>
     </div>    
 
     <div ng-show="partialChoice == 4">
-      <div id="blogFrame">   
+      <div class="embedFrame">   
         <iframe src="http://maryannepeters.wordpress.com/" width=100% height="1000" frameborder="0" scrolling="yes"> </iframe> 
       </div>
     </div>

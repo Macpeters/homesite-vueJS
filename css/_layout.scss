@@ -1,0 +1,69 @@
+.shaded_dark {
+  background: #000;
+  color: #ffffff;
+}
+.shaded_light {
+  background-color: #dddddd;
+}
+/*------NAV BAR-----*/
+#navBar ul{
+  overflow: hidden;
+}
+#navBar li{
+    display: inline;
+}
+#navBar a{
+    margin-left:1em;
+    float:left;
+    color: #ffffff; 
+}
+#navBar a:hover{
+  text-decoration: none;
+  color: #cccccc;
+}
+
+
+/*-----CONTENT------*/
+.article {
+    width: 80%;
+    float: right;
+}
+
+.sidebar {
+    width: 20%;
+    float: left;
+    /*background-color: #dddddd;*/
+}
+
+.sidebar ul{
+    width: 100%;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    list-style: none;
+}
+
+.sidebar button{
+    display: block;
+    font-size: 1.5em;
+    width: 100%;
+}
+
+/*------FOOTER------*/
+ .sidebar__chickletsa{
+  color: white;
+  padding-left: 4em;
+/*  background: #dddddd;*/
+ }
+.sidebar__chicklets a img{
+  width:32px;
+  height:32px;
+  border-width: 0.1em;
+  border-style: ridge;
+  border-color: #000000;
+  display: inline;
+}
+.sidebar__chicklets a img:hover{
+  border-color: #ffffff;
+}
+

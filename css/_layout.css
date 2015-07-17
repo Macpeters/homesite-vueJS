@@ -13,6 +13,7 @@
 .bordered:hover{
   border-color: #ffffff;
 }
+
 /*------NAV BAR-----*/
 #navBar ul{
   overflow: hidden;
@@ -37,9 +38,17 @@
     float: right;
 }
 
-.sidebar {
+@media screen and (min-width: 640px){
+  .sidebar {
     width: 20%;
     float: left;
+  }
+}
+@media screen and (max-width: 640px){
+  .sidebar {
+    float: bottom;
+    width: 100%;
+  }
 }
 
 .sidebar ul{
@@ -49,7 +58,6 @@
     overflow: hidden;
     list-style: none;
 }
-
 .sidebar button{
     display: block;
     font-size: 1.5em;

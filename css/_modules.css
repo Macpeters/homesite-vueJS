@@ -20,9 +20,10 @@
   display: inline-block;
 }
 .mediaCard img{
-  max-height:150px;
-  max-width:150px;
+  max-height:7em;
+  max-width:12em;
 }
+
 .mediaCard .mediaHeading{
   font-weight: bold;
   font-size: 1.5em;

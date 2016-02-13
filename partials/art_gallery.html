@@ -2,17 +2,17 @@
 	<div class="galleryList shaded_light">
 		<span ng-repeat="gallery in galleries"  
 			ng-show="gallery.galleryType == partialChoice">
-			<img src="{{gallery.imageUrl}}" ng-click="SelectGallery(gallery)" ></img>
+			<img class="bordered" src="{{gallery.imageUrl}}" ng-click="SelectGallery(gallery)" ></img>
 		</span>
 	</div>
 	<div>
 		<div class="galleryList">
 			<span ng-repeat="item in gallery.collection">
-				<img ng-src="{{item.url}}" ng-click="setImage(item)"></img>
+				<img class="bordered" ng-src="{{item.url}}" ng-click="setImage(item)"/>
 			</span>
 		</div>
 		<div>
-			<img src={{showImage.url}}></img>
+			<img ng-src="{{showImage.url}}"/>
 			<div class="mainHeading shaded_light">{{showImage.title}}</div>
 		</div>		
 	</div>

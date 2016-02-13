@@ -20,9 +20,10 @@
   display: inline-block;
 }
 .mediaCard img{
-  max-height:150px;
-  max-width:150px;
+  max-height:7em;
+  max-width:12em;
 }
+
 .mediaCard .mediaHeading{
   font-weight: bold;
   font-size: 1.5em;
@@ -62,8 +63,8 @@
   padding-left: 4em;
 }
 .galleryList img{
-  width: 64px;
-  height: 64px;
+  width: 5em;
+  height: 5em;
 }
 #artist_statement{
   width: 80%;

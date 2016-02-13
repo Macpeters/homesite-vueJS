@@ -5,6 +5,15 @@
 .shaded_light {
   background-color: #dddddd;
 }
+.bordered {
+  border-width: 0.2em;
+  border-style: ridge;
+  border-color: #000000;
+}
+.bordered:hover{
+  border-color: #ffffff;
+}
+
 /*------NAV BAR-----*/
 #navBar ul{
   overflow: hidden;
@@ -15,7 +24,7 @@
 #navBar a{
     margin-left:1em;
     float:left;
-    color: #ffffff; 
+    color: #ffffff;
 }
 #navBar a:hover{
   text-decoration: none;
@@ -29,10 +38,17 @@
     float: right;
 }
 
-.sidebar {
+@media screen and (min-width: 640px){
+  .sidebar {
     width: 20%;
     float: left;
-    /*background-color: #dddddd;*/
+  }
+}
+@media screen and (max-width: 640px){
+  .sidebar {
+    float: bottom;
+    width: 100%;
+  }
 }
 
 .sidebar ul{
@@ -42,28 +58,20 @@
     overflow: hidden;
     list-style: none;
 }
-
 .sidebar button{
     display: block;
     font-size: 1.5em;
     width: 100%;
+    margin-top: 0.2em;
 }
 
 /*------FOOTER------*/
- .sidebar__chickletsa{
+ .sidebar__chicklets a{
   color: white;
   padding-left: 4em;
-/*  background: #dddddd;*/
  }
 .sidebar__chicklets a img{
-  width:32px;
-  height:32px;
-  border-width: 0.1em;
-  border-style: ridge;
-  border-color: #000000;
+  width:2em;
+  height:2em;
   display: inline;
 }
-.sidebar__chicklets a img:hover{
-  border-color: #ffffff;
-}
-

@@ -24,7 +24,7 @@
 #navBar a{
     margin-left:1em;
     float:left;
-    color: #ffffff; 
+    color: #ffffff;
 }
 #navBar a:hover{
   text-decoration: none;
@@ -66,7 +66,7 @@
 }
 
 /*------FOOTER------*/
- .sidebar__chickletsa{
+ .sidebar__chicklets a{
   color: white;
   padding-left: 4em;
  }
@@ -75,5 +75,3 @@
   height:2em;
   display: inline;
 }
-
-

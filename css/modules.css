@@ -1,0 +1,112 @@
+
+
+/* INDEX */
+.title-image {
+  padding-left: 35%;
+  max-width: 30%;
+  max-height: auto;
+}
+.widgets {
+  max-width: 80%;
+  padding-left: 10%;
+}
+.contact {
+  text-align: center;
+}
+.contact img {
+  max-width: 45px;
+  max-height: 45;
+  padding: 15px;
+}
+
+/* Resume */
+.resume-header {
+  text-align: center;
+  font-weight: bold;
+}
+.resume-header div {
+  padding: 10px;
+}
+.resume-header img{
+  width: 30px;
+  height: 30px;
+}
+.resume-sub-header {
+  text-align: left;
+  font-weight: bold;
+}
+.resume-highlights {
+  text-align: center;
+}
+.title {
+  font-weight: bold;
+  padding-left: 10px;
+}
+.sub-title{
+  font-weight: bold;
+  padding: 0.5em;
+}
+.bulletList{
+  text-align: left;
+}
+.bulletList li{
+  list-style: circle;
+}
+
+/* Art */
+.thumbnail {
+  width: 125px;
+  height: 125px;
+  padding: 15px;
+  border-width: 1px;
+  border-color: #fff;
+  border-style: solid;
+}
+@media screen and (max-width: 450px){
+  .thumbnail{
+    width: 80%;
+    height: auto;
+  }
+}
+.thumbnail:hover {
+  border-color: #000;
+}
+.image-preview {
+  width: 450px;
+  height: auto;
+}
+.image-preview img {
+  max-width: 80%;
+  max-height: auto;
+}
+.gallery-buttons img {
+  display: inline-block;
+  padding: 10px;
+  width: 250px;
+  height: auto;
+  border-style: solid;
+  border-color: #fff;
+  border-width: 1px;
+}
+.gallery-buttons img:hover {
+  border-color: #000;
+}
+
+/* Dev */
+
+#demo, #games {
+  padding: 15px;
+  text-align: center;
+}
+#games li {
+  list-style: none;
+}
+.mediaCard {
+  padding-left: 15px;
+  text-align: center;
+  display: inline-block;
+}
+.mediaCard img{
+  width: 125px;
+  height: 125px;
+}

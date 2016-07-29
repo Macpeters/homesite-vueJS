@@ -1,62 +1,51 @@
-<!doctype html>
-<html ng-app="website">
 <head>
   <meta charset="utf-8">
   <meta name="description" content="Macpeters - Maryanne Peters: Programmer/Artist">
-  <meta name="keywords" content="programmer, gamedev, gamemaker studio, yoyo games, web development, art, uv, blacklight, visionary art, canadian, toronto">
+  <meta name="keywords" content="programmer, gamedev, gamemaker studio, swift,ios development, android development, web developer, yoyo games, web development, art, uv, blacklight, visionary art, canadian, toronto">
   <meta name="author" content="Maryanne Peters">
   <meta name="viewport" content="width=device-width, initial-scale=1"/>
   <meta name="google-site-verification" content="ZxmnP8EXJRjiayUi1MzTxW0p9D">
-  
+
   <meta property="og:title" content="Macpeters" />
   <meta property="og:type" content="Programming, Art Portfolio" />
   <meta property="og:url" content="http://www.macpeters.com" />
   <meta property="og:description" content="Macpeters - Maryanne Peters: Programmer/Artist" />
   <meta property="og:site_name" content="Macpeters" />
-  
+
   <title>Macpeters - Maryanne Peters: Programmer, Artist</title>
-  
-  <link rel="stylesheet" href="css/_app.css">
-  <link rel="stylesheet" href="css/_layout.css">
-  <link rel="stylesheet" href="css/_modules.css">
+
+  <link rel="stylesheet" href="css/app.css">
+  <link rel="stylesheet" href="css/layout.css">
+  <link rel="stylesheet" href="css/modules.css">
   <link rel="stylesheet" href="css/bootstrap.css">
   <link rel="stylesheet" href="http://twitter.github.com/bootstrap/assets/css/bootstrap.css">
-  
-  <script src="lib/angular/angular.js"></script>
-  <script src="js/app.js"></script>
-  <script src="js/controllers.js"></script>
-  <script src="js/filters.js"></script>
-  <script src="js/services.js"></script>
-  <script src="lib/angular/angular-resource.js"></script>
-
-  <!-- sharethis -->
-  <script type="text/javascript">var switchTo5x=true;</script>
-  <script type="text/javascript" src="http://w.sharethis.com/button/buttons.js"></script>
-  <script type="text/javascript" src="http://s.sharethis.com/loader.js"></script>
 </head>
 
+
 <body>
+  <div class="nav-header">
+    <a href="index.html" class="logo"><img src="images/macpeters_logo.png" alt="macpeters" title="macpeters"></a>
+    <a href="dev.html">Development/Programming</a> |
+    <a href="art.html">Art/Design</a>
+  </div>
 
-  <div ng-include src="'partials/header.html'"></div>
+  <h1>Macpeters</h1>
+  <img src="images/devArtPic.png" class="title-image">
 
-  <hr />
-	<div ng-view></div>
+  <div class="widgets">
+    <!-- twitter widget -->
+    <a class="twitter-timeline" href="https://twitter.com/MaryannePeters" data-widget-id="616768565669142528">Tweets von @MaryannePeters </a>
+    <script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0],p=/^http:/.test(d.location)?'http':'https';if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src=p+"://platform.twitter.com/widgets.js";fjs.parentNode.insertBefore(js,fjs);}}(document,"script","twitter-wjs");</script>
+    <!-- instagram widget -->
+    <iframe src="//widgets-code.websta.me/w/a19bddb0e18c?ck=MjAxNi0wNy0yOFQxODozNDo0OC4wMDBa" allowtransparency="true" frameborder="0" scrolling="no" style="border:none;overflow:auto;height:520px;width:335px;"></iframe> <!-- WEBSTA WIDGETS - widgets.websta.me -->
+  </div>
 
-  <div ng-include src="'partials/footer.html'"></div>
-
-
-  <!-- sharethis -->
-  <script type="text/javascript">stLight.options({publisher: "59d7f2a4-aed8-4531-9ca5-eb824b76b465", doNotHash: false, doNotCopy: false, hashAddressBar: false});</script>
-  <script>
-    var options={ 
-      "publisher": "59d7f2a4-aed8-4531-9ca5-eb824b76b465", 
-      "scrollpx": 50, 
-      "ad": { "visible": false}, 
-      "chicklets": { "items": ["sharethis", "facebook", "tumblr", "twitter", "pinterest"]}};
-    var st_pulldown_widget = new sharethis.widgets.pulldownbar(options);
-
-  </script>
+  <div class="contact">
+    <a href="https://www.linkedin.com/in/maryanne-mac-peters-56ab9b38?trk=hp-identity-name" target="_blank"><img src="images/social/linkedin.png"></a>
+    <a href="mailto:peters.maryanne@gmail.com" target="_blank"><img src="images/social/email.png" alt="email" title="email"</a>
+    <a href="https://twitter.com/MaryannePeters" target="_blank"><img src="images/social/twitter.png" alt="twitter" title="twitter"></a>
+    <a href="https://www.facebook.com/macpetersArt/" target="_blank"><img src="images/social/facebook.png" alt="facebook" title="facebook"></a>
+    <a href="https://www.instagram.com/macpetersart/?hl=en" target="_blank"><img src="images/social/instagram.jpg" alt="instagram" title="instagram"></a>
+  </div>
 
 </body>
-
-</html>

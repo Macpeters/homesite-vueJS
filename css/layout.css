@@ -1,0 +1,44 @@
+.nav-header {
+  text-align: center;
+  font-size: 24px;
+  font-weight: bold;
+  background-color: #000000;
+  color: #ffffff;
+  padding: 15px;
+}
+.nav-header a {
+  padding-left: 15px;
+}
+@media screen and (max-width: 450px){
+  .nav-header a{
+    font-size: 20px;
+  }
+}
+
+
+.sub-nav {
+  text-align: center;
+}
+.sub-nav h2 {
+  display: inline;
+  padding-left: 10px;
+}
+.sub-nav img {
+  width: 25px;
+  height: 25px;
+}
+
+td {
+  padding-left: 15px;
+}
+
+p {
+  padding-left: 15px;
+  padding-right: 15px;
+}
+
+.logo img{
+  padding-right: 25px;
+  height: 40px;
+  width: auto;
+}

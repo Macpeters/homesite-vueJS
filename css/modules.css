@@ -92,6 +92,24 @@
   border-color: #000;
 }
 
+
+.urban_sketch img {
+  margin: 10px;
+  border-color: #000;
+  border-style: ridge;
+  border-width: 1px;
+  max-width: 30%;
+  max-height: auto;
+}
+
+#ttc_blurb {
+  padding: 20px;
+  width: 60%;
+}
+#ttc_blurb ul {
+  list-style: none;
+}
+
 /* Dev */
 
 #demo, #games {

@@ -8,6 +8,8 @@ html, body {
   color: #000000;
 }
 
+video { padding-left: 100px;}
+
 h1 {
   font-size: 27px;
   font-weight: bolder;
@@ -19,6 +21,9 @@ h2, h3, h5 {
   padding: 10px;
 }
 
+a {
+  text-decoration: none !important;
+}
 
 img {
   width: 100%;

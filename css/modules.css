@@ -54,6 +54,9 @@
 }
 
 /* Art */
+.art-gallery {
+  padding: 20px;
+}
 .thumbnail {
   width: 125px;
   height: 125px;
@@ -79,39 +82,24 @@
   max-width: 80%;
   max-height: auto;
 }
-.other-gallery {
-  text-align: center;
+.imagepreview-title {
+  font-weight: bold;
 }
-.other-gallery img {
-  display: inline-block;
-  padding-left: 20%;
-  width: 450px;
-  height: auto;
-  border-style: solid;
-  border-color: #fff;
-  border-width: 1px;
-}
-.gallery-buttons img {
-  display: inline-block;
-  padding: 10px;
-  width: 250px;
-  height: auto;
-  border-style: solid;
-  border-color: #fff;
-  border-width: 1px;
-}
-.gallery-buttons img:hover {
-  border-color: #000;
-}
-.paypal {
-  clearfix: both;
+
+/* SHOP */
+.paypal-button {
   padding: 0;
   margin: 0;
-  width: 100px;
   height: 100px;
 }
-
-
+.paypal-button img{
+  height: 1px;
+  width: 1px;
+}
+.shop-buttons {
+  text-align: center;
+  padding: 10px;
+}
 .urban_sketch img {
   margin: 10px;
   border-color: #000;

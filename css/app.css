@@ -1,5 +1,11 @@
-@@ -21,3 +21,59 @@
+@import url("layout.css");
+@import url("dev.css");
+@import url("resume.css");
+@import url("art.css");
+@import url("artShop.css");
+@import url("artGifts.css");
 
+@@ -21,3 +21,59 @@
 @-ms-viewport{ width: device-width; }
 
 html, body {

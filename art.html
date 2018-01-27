@@ -1,31 +1,26 @@
 <head>
   <meta charset="utf-8">
-  <meta name="description" content="Macpeters - Maryanne Peters: Visionary Artist">
-  <meta name="keywords" content="art, uv, blacklight, psychedelic, visionary art, painting, airbrush, spraypaint, portrait, game art, vector, illustration, canadian, toronto">
+  <meta name="description" content="Macpeters - Maryanne Peters: Programmer/Artist">
+  <meta name="keywords" content="programmer, gamedev, gamemaker studio, swift,ios development, android development, web developer, yoyo games, web development, art, uv, blacklight, visionary art, canadian, toronto">
   <meta name="author" content="Maryanne Peters">
   <meta name="viewport" content="width=device-width, initial-scale=1"/>
   <meta name="google-site-verification" content="ZxmnP8EXJRjiayUi1MzTxW0p9D">
 
   <meta property="og:title" content="Macpeters" />
-  <meta property="og:type" content="Art Portfolio" />
+  <meta property="og:type" content="Programming, Art Portfolio" />
   <meta property="og:url" content="http://www.macpeters.com" />
-  <meta property="og:description" content="Macpeters - Maryanne Peters: Artist" />
+  <meta property="og:description" content="Macpeters - Maryanne Peters: Programmer/Artist" />
   <meta property="og:site_name" content="Macpeters" />
 
-  <title>Macpeters - Maryanne Peters: Artwork</title>
+  <title>Macpeters - Maryanne Peters: Programmer, Artist</title>
 
   <link rel="stylesheet" href="css/app.css">
-  <link rel="stylesheet" href="css/layout.css">
-  <link rel="stylesheet" href="css/modules.css">
-  <link rel="stylesheet" href="css/bootstrap.css">
-  <link rel="stylesheet" href="http://twitter.github.com/bootstrap/assets/css/bootstrap.css">
+  <link rel="stylesheet" href="css/bootstrap/bootstrap.css">
 
   <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
-  <script src="js/bootstrap.min.js"></script>
-  <script src="js/app.js"></script>
-
+  <script src="lib/bootstrap.min.js"></script>
+  <script type='text/javascript' src='lib/knockout-3.4.2.js'></script>
 </head>
-
 
 <body>
   <div><img src="images/header.png" class="header-image"></div>
@@ -35,231 +30,123 @@
     <a href="art.html" class="nav-link">Art/Design</a>
   </div>
 
+<!-- Nav -->
   <div class="sub-nav">
     <a href="art.html"><h2>Art</h2></a> |
     <a href="artServices.html"><h2>Services</h2></a> |
     <a href="https://macpetersart.wordpress.com/" target="blank"><h2 id="galleries"><img src="images/social/wordpress.png">Blog</h2></a> |
     <a href="artAbout.html"><h2>About</h2></a> |
-    <a href="artShop.html"><h2>Shop</h2></a>
+    <a href="artShop.html"><h2>Shop</h2></a> |
+    <a href="artGifts.html"><h2>Gifts</h2></a>
   </div>
-
   <div class="shop-buttons">
     <span class="btn btn-default"><a href="#fineArt">Fine Art</a></span>
     <span class="btn btn-default"><a href="#skateboard">Skateboards</a></span>
     <span class="btn btn-default"><a href="#graf">Murals/Aerosol</a></span>
   </div>
 
+  <!-- Art Galleries -->
   <div class="art-gallery">
-    <h3 id="fineArt">Fine Art</h3>
-    <div><p><h4>Feels Monsters</h4> These characters are intended to personify a single emotional state - I want the viewer to look at one of these characters, and immediately feel what that character is feeling.</p></div>
-    <div>
-      <a href="#" class="pop">
-        <img src="images/fineArt/eagerness.png" class="thumbnail"
-          alt="Eagerness by Macpeters"
-          title="Eagerness - 30x30 UV Acrylic on canvas"
-          data-description="Eagerness has his eye on a treat, and is in a hurry to get a taste of it.">
-      </a>
-      <a href="#" class="pop">
-        <img src="images/fineArt/stubborn.png" class="thumbnail"
-          alt="Stubborn Resentment by Macpeters"
-          title="Stubborn Resentment - 30x30 UV Acrylic on canvas"
-          data-description="He has had just about enough.  Careful you don't push him too far, as he's liable to lash out.">
-      </a>
-      <a href="#" class="pop">
-        <img src="images/fineArt/bliss.png" class="thumbnail"
-        alt="Bliss by Macpeters"
-        title="Bliss by Macpeters - 30x30 UV Acrylic on canvas"
-        data-description="As a jellyfish, Bliss has no weight, and no resistance to the changing currents of the world. He enjoys every ripple to the fullest extent.">
-      </a>
+    <!-- Fine Art -->
+    <div class="art-category">
+      <h3 id="fineArt">Fine Art</h3>
+      <p><h4>Feels Monsters</h4>  These characters are intended to personify a single emotional state - I want the viewer to look at one of these characters, and immediately feel what that character is feeling.</p>
+      <div data-bind="foreach: feelsMonsters">
+          <div class="image-thumb">
+            <a href="#" class="pop" data-bind="click: $parent.popup">
+              <img src="" class="thumbnail" data-bind="attr: { src: url, alt: title }">
+            </a>
+            <div class="image-title" data-bind="text: title"></div>
+          </div>
+      </div>
+      <p><h4>All the Feels</h4> Strong, complex, overwhelming feeling - I believe it's important to Feel Everything As Real, to explore the entirety of each experience.  All of these feelings are fleeting, and worth exploring while they are present.  They add context, and provide valuable insight into one's self and surroundings.</p>
+      <div data-bind="foreach: allTheFeels">
+          <div class="image-thumb">
+            <a href="#" class="pop" data-bind="click: $parent.popup">
+              <img src="" class="thumbnail" data-bind="attr: { src: url, alt: title }">
+            </a>
+            <div class="image-title" data-bind="text: title"></div>
+          </div>
+      </div>
+      <p><h4>Sacred Birds</h4> Sacred Geometry and timelessness, here to remind us of what's important in life.  Time and space are vast, and we needn't get caught up in the small stuff.  These sacred birds of the aeons remind us to keep it all in perspective.</p>
+      <div data-bind="foreach: sacredBirds">
+          <div class="image-thumb">
+            <a href="#" class="pop" data-bind="click: $parent.popup">
+              <img src="" class="thumbnail" data-bind="attr: { src: url, alt: title }">
+            </a>
+            <div class="image-title" data-bind="text: title"></div>
+          </div>
+      </div>
       <a href="#" class="pop"><div><a href="#galleries">Back to Top</a></div>
       <hr />
     </div>
 
-    <div><p><h4>All the Feels</h4> Strong, complex, overwhelming feeling - I believe it's important to Feel Everything As Real, to explore the entirety of each experience.  All of these feelings are fleeting, and worth exploring while they are present.  They add context, and provide valuable insight into one's self and surroundings.</p></div>
-    <div>
-      <a href="#" class="pop">
-        <img src="images/fineArt/gratitude.jpg" class="thumbnail"
-          alt="Gratitude by Macpeters"
-          title="Gratitude - 24x24 UV Acrylic on canvas"
-          data-description="Accepting the gift of light, and giving gratitude in return.">
-      </a>
-      <a href="#" class="pop">
-        <img src="images/fineArt/mischeif.png" class="thumbnail"
-          alt="Mischief"
-          title="Mischief - 18x18 UV Acrylic on canvas"
-          data-description="Did you see snakes in her hair?  Look again.  Mischief likes to play harmless tricks.  She is the spirit of Nature in spring, playful and fun."></a>
-      <a href="#" class="pop">
-        <img src="images/fineArt/masked.png" class="thumbnail"
-          alt="Masked Fear by Macpeters"
-          title="Masked Fear - 18x18 UV Acrylic on canvas"
-          data-description="Afraid to come out of the dark, Fear holds out a scary mask to frighten away whatever might be waiting out there."></a>
-      <a href="#" class="pop">
-        <img src="images/fineArt/cracking.png" class="thumbnail"
-          alt="Cracking Under the Pressure by Macpeters"
-          title="Cracking Under the Pressure - 18x18 UV Acrylic on canvas"
-          data-description="Intense pressure and stress mean that you've outgrown your shell - when it cracks, you are free to grow a new one.  Check out Twerski on stress for a neat talk.">
-      </a>
-      <a href="#" class="pop">
-        <img src="images/fineArt/shpongle.png" class="thumbnail"
-          alt="Dancing With the Universe AKA Shpongle: Codex 6 by Macpeters"
-          title="Dancing With the Universe AKA Shpongle: Codex 6 by Macpeters - 18x18 UV Acrylic on canvas"
-          data-description="You are the Universe enjoying a dance through one timeline from one perspective, and the Universe is watching your dance.">
-      </a>
-      <a href="#" class="pop">
-        <img src="images/fineArt/monsterball.jpg" class="thumbnail"
-          alt="Monsterball by Macpeters"
-          title="Monsterball by Macpeters - 12x12 Acrylic on canvas"
-          data-description="Monsterball is everyone you meet who is putting up a false front.  You can't tell what their motivations are, so interacting with them is like trying to navigate a dark labyrinth, always wondering if it's even worth the trouble.  I mean, if they can't ever be honest, is knowing them more trouble than it's worth?">
-      </a>
+    <!-- Skateboards -->
+    <div class="art-category">
+      <h3 id="skateboard">Skateboards</h3>
+      <p>All of these skateboards have had their fun in the sun - they are the cracked remnants of their former selves, given new life.  Original, one of a kind painted decks can be purchased for $100 each plus shipping.  Want me to paint your own deck?  Contact me directly.</p>
+      <div data-bind="foreach: skateboards">
+        <div class="image-thumb">
+            <a href="#" class="pop" data-bind="click: $parent.popup">
+              <img src="" class="thumbnail" data-bind="attr: { src: url, alt: title }">
+            </a>
+          <div class="image-title" data-bind="text: title"></div>
+        </div>
+      </div>
       <a href="#" class="pop"><div><a href="#galleries">Back to Top</a></div>
       <hr />
     </div>
 
-    <div><p><h4>Sacred Birds</h4> Sacred Geometry and timelessness, here to remind us of what's important in life.  Time and space are vast, and we needn't get caught up in the small stuff.  These sacred birds of the aeons remind us to keep it all in perspective.</p></div>
-    <div>
-      <a href="#" class="pop">
-        <img src="images/fineArt/starBird.jpg" class="thumbnail"
-          alt="Star Bird by Macpeters"
-          title="Star Bird - 12x12 Acrylic on canvas"
-          data-description="Shooting through space, Star Bird is just enjoying the journey for what it is.">
-      </a>
-      <a href="#" class="pop">
-        <img src="images/fineArt/loveBird.jpg" class="thumbnail"
-          alt="Love Bird by Macpeters"
-          title="Love Bird - 12x12 Acrylic on canvas"
-          data-description="Real Love persists when passion cools, and wants nothing in return">
-      </a>
+    <!-- Murals -->
+    <div class="art-category">
+      <h3 id="graf">Murals</h3>
+      <p>Indoor and outdoor murals for your store, restaurant, garage, or home.  Freshen up weather beaten or tagged outdoor areas with a colourful mural.</p>
+      <div data-bind="foreach: murals">
+        <div class="image-thumb">
+          <a href="#" class="pop" data-bind="click: $parent.popup">
+            <img src="" class="thumbnail" data-bind="attr: { src: url, alt: title }">
+          </a>
+          <div class="image-title" data-bind="text: title"></div>
+        </div>
+      </div>
       <a href="#" class="pop"><div><a href="#galleries">Back to Top</a></div>
       <hr />
     </div>
 
-    <h3 id="skateboard">Skateboard Decks</h3>
-    <div><p>All of these skateboards have had their fun in the sun - they are the cracked remnants of their former selves, given new life.  Original, one of a kind painted decks can be purchased for $100 each plus shipping.  Want me to paint your own deck?  Contact me directly.</p></div>
-    <div>
-      <a href="#" class="pop">
-        <img src="images/skateboards/08_tiki.jpg" class="thumbnail"
-          alt="Super Friends"
-          title="Super Friends"
-          data-description="An unusual group of characters">
-      </a>
-      <a href="#" class="pop">
-        <img src="images/skateboards/07_who.jpg" class="thumbnail"
-          alt="Exterminate by Macpeters"
-          title="Exterminate"
-          data-description="Inspired by Dr Who: a tardis, a dalek, travel through time and space, and that question that can never be answered: Dr. Who?"></a>
-      <a href="#" class="pop">
-        <img src="images/skateboards/06_trickrtreat.jpg" class="thumbnail"
-          alt="Sam from Trick R Treat"
-          title="Sam from Trick R Treat"
-          data-description="Sam from the cult classic Trick R Treat movie"></a>
-      <a href="#" class="pop">
-        <img src="images/skateboards/05_jerryBear.jpg" class="thumbnail"
-          alt="Grateful Dead Jerry Bear"
-          title="Grateful Dead Flying Jerry Bear"
-          data-description="Inspired by the music and art of the Grateful Dead band and movement"></a>
-      <a href="#" class="pop">
-        <img src="images/skateboards/04_robot.jpg" class="thumbnail"
-          alt="Broken Robot"
-          title="Broken Robot"
-          data-description="With wires sparking, and cracked eyes, this poor robot needs some TLC">
-      </a>
-      <a href="#" class="pop">
-        <img src="images/skateboards/02_mushEye.jpg" class="thumbnail"
-          alt="Mushroom Eye by Macpeters"
-          title="Mushroom Eye"
-          data-description="Psychedelic skateboard painted at COSM during a Chris Dyer workshop">
-      </a>
-      <a href="#" class="pop">
-        <img src="images/skateboards/01_bee.jpg" class="thumbnail"
-          alt="Psychedelic Bee by Macpeters"
-          title="Psychedelic Bee"
-          data-description="Three eyed bee with veiny wings"></a>
-      <a href="#" class="pop"><div><a href="#galleries">Back to Top</a></div>
-      <hr />
-    </div>
-
-    <h3 id="graf">Murals/Spraypaint/Graffiti</h3>
-    <div><p>Indoor and outdoor murals for your store, restaurant, garage, or home.  Freshen up weather beaten or tagged outdoor areas with a colourful mural.</p></div>
-    <div>
-      <a href="#" class="pop">
-        <img src="images/graf/octopus.png" class="thumbnail"
-          alt="Octo-buddy by Macpeters at Fulton Fitness, St Catherines"
-          title="Octo-buddy"
-          data-description="Weight lifting octopus gives encouragement to those working out at Fulton Fitness">
-      </a>
-      <a href="#" class="pop">
-        <img src="images/graf/fishBarrel.jpg" class="thumbnail"
-          alt="Alarmed Fish Recycling Barrel by Macpeters"
-          title="Alarmed Fish Recycling Barrel"
-          data-description="This fish is alarmed at how much recycling is ending up in the water.  Put it in the bin.. which looks like water..">
-      </a>
-      <a href="#" class="pop">
-        <img src="images/graf/chameleon.jpg" class="thumbnail"
-          alt="Chameleon by Macpeters"
-          title="Chameleon"
-          data-description="Chameleon on a garage in the Alleyway of Dreams, Toronto">
-      </a>
-      <a href="#" class="pop">
-        <img src="images/graf/bee.jpg" class="thumbnail"
-          alt="Bee by Macpeters"
-          title="Bee"
-          data-description="It's a sassy wasp, actually, but people are less scared of bees, right?  Painted on a garage in the Alleyway of Dreams, Toronto">
-      </a>
-      <a href="#" class="pop">
-        <img src="images/graf/ribbit.jpg" class="thumbnail"
-          alt="Ribbit by Macpeters"
-          title="Ribbit"
-          data-description="Frog painted on old door">
-        </a>
-      <a href="#" class="pop">
-        <img src="images/graf/robot.jpg" class="thumbnail"
-        alt="Robot by Macpeters"
-        title="Robot"
-        data-description="Robot drooling oil, painted on abandoned construction board">
-      </a>
-      <a href="#" class="pop">
-        <img src="images/graf/mouse.jpg" class="thumbnail"
-          alt="Graf Mouse by Macpeters"
-          title="Graf Mouse"
-          data-description="Spray painting mouse, painted on abandoned construction board">
-      </a>
-      <a href="#" class="pop"><div><a href="#galleries">Back to Top</a></div>
-      <hr />
-    </div>
   </div>
 
+  <!-- Contact -->
+  <div class="contact">
+    <a href="https://www.linkedin.com/in/maryanne-mac-peters-56ab9b38?trk=hp-identity-name" target="_blank"><img src="images/social/linkedin.png"></a>
+    <a href="mailto:peters.maryanne@gmail.com" target="_blank"><img src="images/social/email.png" alt="email" title="email"</a>
+    <a href="https://twitter.com/MaryannePeters" target="_blank"><img src="images/social/twitter.png" alt="twitter" title="twitter"></a>
+    <a href="https://www.facebook.com/macpetersArt/" target="_blank"><img src="images/social/facebook.png" alt="facebook" title="facebook"></a>
+    <a href="https://www.instagram.com/macpetersart/?hl=en" target="_blank"><img src="images/social/instagram.jpg" alt="instagram" title="instagram"></a>
+  </div>
+</body>
 
-
-
-  <!-- Creates the bootstrap modal where the image will appear -->
-  <div class="modal fade" id="imagemodal" tabindex="-1" role="dialog"
-        aria-labelledby="myModalLabel" aria-hidden="true">
-    <div class="modal-dialog">
-      <div class="modal-content">
-        <div class="modal-header">
-          <button type="button" class="close" data-dismiss="modal"><span aria-hidden="true">&times;</span><span class="sr-only">Close</span></button>
-          <h4 class="modal-title" id="myModalLabel">Image preview</h4>
+<!-- Creates the bootstrap modal where the image will appear -->
+<div class="modal fade" id="imagemodal" tabindex="-1" role="dialog"
+      aria-labelledby="myModalLabel" aria-hidden="true">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        <button type="button" class="close" data-dismiss="modal"><span aria-hidden="true">&times;</span><span class="sr-only">Close</span></button>
+        <h4 class="modal-title" id="myModalLabel">Image preview</h4>
+      </div>
+      <div class="modal-body">
+        <div class="image-preview">
+          <img src="" class="imagepreview" id="imagepreview">
+          <div class="imagepreview-title"></div>
+          <div class="imagepreview-description"></div>
         </div>
-        <div class="modal-body">
-          <div class="image-preview">
-            <img src="" class="imagepreview">
-            <div class="imagepreview-title"></div>
-            <div class="imagepreview-description"></div>
-          </div>
-        </div>
-        <div class="modal-footer">
-          <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
-        </div>
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
       </div>
     </div>
   </div>
-
-<div class="contact">
-  <a href="https://www.linkedin.com/in/maryanne-mac-peters-56ab9b38?trk=hp-identity-name" target="_blank"><img src="images/social/linkedin.png"></a>
-  <a href="mailto:peters.maryanne@gmail.com" target="_blank"><img src="images/social/email.png" alt="email" title="email"</a>
-  <a href="https://twitter.com/MaryannePeters" target="_blank"><img src="images/social/twitter.png" alt="twitter" title="twitter"></a>
-  <a href="https://www.facebook.com/macpetersArt/" target="_blank"><img src="images/social/facebook.png" alt="facebook" title="facebook"></a>
-  <a href="https://www.instagram.com/macpetersart/?hl=en" target="_blank"><img src="images/social/instagram.jpg" alt="instagram" title="instagram"></a>
 </div>
 
-</body>
+
+<script src="js/imageList.js"></script>

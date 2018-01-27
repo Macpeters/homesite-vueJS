@@ -15,10 +15,11 @@
   <title>Macpeters - Maryanne Peters: Programmer, Artist</title>
 
   <link rel="stylesheet" href="css/app.css">
-  <link rel="stylesheet" href="css/layout.css">
-  <link rel="stylesheet" href="css/modules.css">
-  <link rel="stylesheet" href="css/bootstrap.css">
-  <link rel="stylesheet" href="http://twitter.github.com/bootstrap/assets/css/bootstrap.css">
+  <link rel="stylesheet" href="css/bootstrap/bootstrap.css">
+  <script src="lib/jquery-3.2.1.min.js"></script>
+  <script type='text/javascript' src='lib/knockout-3.4.2.js'></script>
+
+  <script src="js/app.js"></script>
 </head>
 
 
@@ -29,12 +30,12 @@
     <a href="dev.html" class="nav-link">Development/Programming</a>
     <a href="art.html" class="nav-link">Art/Design</a>
   </div>
-  <div class="widgets">
-    <!-- twitter widget -->
-    <a class="twitter-timeline" href="https://twitter.com/MaryannePeters" data-widget-id="616768565669142528">Tweets von @MaryannePeters </a>
-    <script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0],p=/^http:/.test(d.location)?'http':'https';if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src=p+"://platform.twitter.com/widgets.js";fjs.parentNode.insertBefore(js,fjs);}}(document,"script","twitter-wjs");</script>
-    <!-- instagram widget -->
-    <iframe src="//widgets-code.websta.me/w/a19bddb0e18c?ck=MjAxNi0wNy0yOFQxODozNDo0OC4wMDBa" allowtransparency="true" frameborder="0" scrolling="no" style="border:none;overflow:auto;height:520px;width:335px;"></iframe> <!-- WEBSTA WIDGETS - widgets.websta.me -->
+
+  <div class="slideshow">
+    <a href="#" data-bind="attr: { href: currentImage().link }"><img src="" data-bind="attr: { src: currentImage().url }"></a>
+    <ul data-bind="foreach: slideShowImages" class="slideDots"><li>
+      <a data-bind="click: $parent.setSliderImage($data)"><span class="dot"></span></li></a>
+    </ul>
   </div>
 
   <div class="contact">
@@ -44,5 +45,7 @@
     <a href="https://www.facebook.com/macpetersArt/" target="_blank"><img src="images/social/facebook.png" alt="facebook" title="facebook"></a>
     <a href="https://www.instagram.com/macpetersart/?hl=en" target="_blank"><img src="images/social/instagram.jpg" alt="instagram" title="instagram"></a>
   </div>
+
+  <script src="js/slideShow.js"></script>
 
 </body>

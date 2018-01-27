@@ -1,0 +1,19 @@
+.art-choice {
+  width: 100px;
+  height: auto;
+  display: inline;
+}
+.paypal-button {
+  padding: 0;
+  margin: 0;
+  height: 100px;
+  display: inline;
+}
+.paypal-button img{
+  height: 1px;
+  width: 1px;
+}
+.shop-buttons {
+  text-align: center;
+  padding: 10px;
+}

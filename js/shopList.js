@@ -23,21 +23,25 @@ var ShopList = function(images) {
 		}
 	};
 
-  self.selectArt = function(item){
-    var selector = "#" + item.shop_item + " :selected"
+  self.selectPrint = function(){
+    var selector = "#prints :selected";
     var el = $(selector).text().toLowerCase().split(" ")[0]
     var image_url = image_url_for_choice(el);
-    switch(item.shop_item){
-      case "magnets":
-        self.magnetChoice(image_url);
-        break;
-      case "prints":
-        self.printChoice(image_url);
-        break;
-      case "gift-packs":
-        self.giftPackChoice(image_url);
-        break;
-    }
+    self.printChoice(image_url);
+  }
+
+  self.selectMagnet = function(){
+    var selector = "#magnets :selected";
+    var el = $(selector).text().toLowerCase().split(" ")[0]
+    var image_url = image_url_for_choice(el);
+    self.magnetChoice(image_url);
+  }
+
+  self.selectGift = function(){
+    var selector = "#gift-packs :selected";
+    var el = $(selector).text().toLowerCase().split(" ")[0]
+    var image_url = image_url_for_choice(el);
+    self.giftPackChoice(image_url);
   }
 
   function image_url_for_choice(choice){

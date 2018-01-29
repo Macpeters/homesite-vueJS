@@ -40,12 +40,11 @@
   </div>
 
   <div class="shop-buttons">
-    <span class="btn btn-default"><a href="#art-prints">Framed Prints</a></span>
+    <span class="btn btn-default"><a href="#art-prints">Giclee Prints</a></span>
     <span class="btn btn-default"><a href="#art-magnets">Magnets</a></span>
     <span class="btn btn-default"><a href="#art-stickers">Stickers</a></span>
     <span class="btn btn-default"><a href="#art-buttons">Buttons</a></span>
     <span class="btn btn-default"><a href="#art-gifts">Gift Packs</a></span>
-    <span class="btn btn-default"><a href="#other">Other</a></span>
     <hr />
     <!-- View Cart -->
     <form class="paypal-button" target="paypal" action="https://www.paypal.com/cgi-bin/webscr" method="post" >
@@ -59,144 +58,135 @@
   <div class="art-gallery">
 
     <!-- Prints  -->
-    <div data-bind="foreach: prints">
-      <h3 data-bind="text: title" id="art-prints"></h3>
-      <div><p data-bind="text: description"></p></div>
-      <div data-bind="foreach: image_urls">
-        <span class="image-thumb">
-          <a href="#" class="pop" data-bind="click: $root.popup">
-            <img src="" class="thumbnail" data-bind="attr: { src: url }">
-          </a>
-        </span>
+    <div class="shop-item" id="art-prints">
+      <div class="shop-header">
+        <h3>Limited Edition Giclee Art Prints: $20</h3>
+        <p class="description">High quality 8x10 inch prints, signed and numbered. Premium lustre and enhanced matte archival quality giclee</p>
       </div>
-      <form class="paypal-button" target="paypal" action="https://www.paypal.com/cgi-bin/webscr" method="post">
-        <input type="hidden" name="cmd" value="_s-xclick">
-        <input type="hidden" name="hosted_button_id" value="D2B83SEX49F28">
-        <table>
-          <tr><td><input type="hidden" name="on0" value="Choice of Art">Choice of Art</td></tr><tr><td>
-            <select name="os0"  id="prints" data-bind="event:{ change: $root.selectArt}">
-  	        <option value="Gratitude">Gratitude</option>
-  	        <option value="Cracking Under the Pressure">Cracking Under the Pressure</option>
-  	        <option value="Bliss">Bliss</option>
-  	        <option value="Eagerness">Eagerness</option>
-  	        <option value="Stubborn Resentment">Stubborn Resentment</option>
-  	        <option value="Mischeif">Mischeif</option>
-  	        <option value="Masked Fear">Masked Fear</option>
-  	        <option value="Cracking Under the Pressure">Cracking Under the Pressure</option>
-  	        <option value="Monsterball">Monsterball</option>
-            <option value="Shpongle">Shpongle</option>
-            <option value="Starbird">Starbird</option>
-            <option value="Lovebird">Lovebird</option>
-          </select> </td></tr>
-        </table>
-        <input type="hidden" name="currency_code" value="CAD">
-        <input type="image" src="https://www.paypalobjects.com/en_US/i/btn/btn_cart_LG.gif" border="0" name="submit" alt="PayPal - The safer, easier way to pay online!">
-        <img alt="" border="0" src="https://www.paypalobjects.com/en_US/i/scr/pixel.gif" width="1" height="1">
-      </form>
-      <span><img class="art-choice" src="" data-bind="attr: { src: $parent.printChoice }"></span>
-      <a href="#" class="pop"><div><a href="#galleries">Back to Top</a></div>
-      <hr />
+      <div class="shop-banner"><img src="images/shop/printsBanner.png"></div>
+
+      <span><img class="art-choice" src="" data-bind="attr: { src: printChoice }"></span>
+<!-- TODO: Change the price in paypall  -->
+      <div>
+        <form class="paypal-button" target="paypal" action="https://www.paypal.com/cgi-bin/webscr" method="post">
+          <input type="hidden" name="cmd" value="_s-xclick">
+          <input type="hidden" name="hosted_button_id" value="D2B83SEX49F28">
+          <table>
+            <tr><td><input type="hidden" name="on0" value="Choice of Art">Choice of Art</td></tr><tr><td>
+              <select name="os0"  id="prints" data-bind="event:{ change: selectPrint}">
+              <option value="Gratitude">Gratitude</option>
+              <option value="Cracking Under the Pressure">Cracking Under the Pressure</option>
+              <option value="Bliss">Bliss</option>
+              <option value="Eagerness">Eagerness</option>
+              <option value="Stubborn Resentment">Stubborn Resentment</option>
+              <option value="Mischeif">Mischeif</option>
+              <option value="Masked Fear">Masked Fear</option>
+              <option value="Cracking Under the Pressure">Cracking Under the Pressure</option>
+              <option value="Monsterball">Monsterball</option>
+              <option value="Shpongle">Shpongle</option>
+              <option value="Starbird">Starbird</option>
+              <option value="Lovebird">Lovebird</option>
+            </select> </td></tr>
+          </table>
+          <input type="hidden" name="currency_code" value="CAD">
+          <input type="image" src="https://www.paypalobjects.com/en_US/i/btn/btn_cart_LG.gif" border="0" name="submit" alt="PayPal - The safer, easier way to pay online!">
+          <img alt="" border="0" src="https://www.paypalobjects.com/en_US/i/scr/pixel.gif" width="1" height="1">
+        </form>
+      </div>
+      <br />
     </div>
-    <br />
+
 
     <!-- Magnets -->
-    <div data-bind="foreach: magnets">
-      <h3 data-bind="text: title" id="art-magnets"></h3>
-      <div><p data-bind="text: description"></p></div>
-      <div data-bind="foreach: image_urls">
-        <div class="image-thumb">
-          <a href="#" class="pop" data-bind="click: $root.popup">
-            <img src="" class="thumbnail" data-bind="attr: { src: url }">
-          </a>
-        </div>
+    <div class="shop-item" id="art-magnets">
+      <div class="shop-header">
+        <h3>Art Magnets: $3</h3>
+        <p class="description">2x2 inch flat art magnets.  Great for hanging on your fridge, locker, or filing cabinet.</p>
       </div>
+
+      <div class="shop-banner"><img src="images/shop/magnetsBanner.png"></div>
+
+      <span><img class="art-choice" src="" data-bind="attr: { src: magnetChoice }"></span>
+
       <form class="paypal-button" target="paypal" action="https://www.paypal.com/cgi-bin/webscr" method="post">
         <input type="hidden" name="cmd" value="_s-xclick">
         <input type="hidden" name="hosted_button_id" value="JKD6PLAUWDZEU">
         <table>
           <tr><td><input type="hidden" name="on0" value="Art Choice">Choice of Art</td></tr><tr><td>
-          <select name="os0" id="magnets" data-bind="event:{ change: $root.selectArt}">
-          	<option value="Gratitude">Gratitude</option>
-          	<option value="Starbird">Starbird</option>
-          	<option value="Cracking Under the Pressure">Cracking Under the Pressure</option>
-          	<option value="Bliss">Bliss</option>
-          	<option value="Eagerness">Eagerness</option>
+          <select name="os0" id="magnets" data-bind="event:{ change: selectMagnet}">
+            <option value="Gratitude">Gratitude</option>
+            <option value="Starbird">Starbird</option>
+            <option value="Cracking Under the Pressure">Cracking Under the Pressure</option>
+            <option value="Bliss">Bliss</option>
+            <option value="Eagerness">Eagerness</option>
           </select> </td></tr>
         </table>
         <input type="hidden" name="currency_code" value="CAD">
         <input type="image" src="https://www.paypalobjects.com/en_US/i/btn/btn_cart_LG.gif" border="0" name="submit" alt="PayPal - The safer, easier way to pay online!">
         <img alt="" border="0" src="https://www.paypalobjects.com/en_US/i/scr/pixel.gif" width="1" height="1">
       </form>
-      <span><img class="art-choice" src="" data-bind="attr: { src: $parent.magnetChoice }"></span>
-      <a href="#" class="pop"><div><a href="#galleries">Back to Top</a></div>
-      <hr />
+
+      <br />
     </div>
 
-    <br />
-
     <!-- Buttons -->
-    <div data-bind="foreach: buttons">
-      <h3 data-bind="text: title" id="art-buttons"></h3>
-      <div><p data-bind="text: description"></p></div>
-      <div data-bind="foreach: image_urls">
-        <div class="image-thumb">
-          <a href="#" class="pop" data-bind="click: $root.popup">
-            <img src="" class="thumbnail" data-bind="attr: { src: url }">
-          </a>
-        </div>
+    <div class="shop-item" id="art-buttons">
+      <div class="shop-header">
+        <h3>Art Buttons: 3 for $10</h3>
+        <p class="description">1 inch square buttons - set of 3 Feels Monsters: Eagerness, Bliss, and Stubborn Resentment</p>
       </div>
+      <div class="shop-banner"><img src="images/shop/buttonsBanner.png"></div>
+
+      <span><img class="art-choice" src="images/shop/buttons.jpg"></span>
+
       <form class="paypal-button" target="paypal" action="https://www.paypal.com/cgi-bin/webscr" method="post">
         <input type="hidden" name="cmd" value="_s-xclick">
         <input type="hidden" name="hosted_button_id" value="J9YVE9XW6WF22">
+
         <input type="image" src="https://www.paypalobjects.com/en_US/i/btn/btn_cart_LG.gif" border="0" name="submit" alt="PayPal - The safer, easier way to pay online!">
         <img alt="" border="0" src="https://www.paypalobjects.com/en_US/i/scr/pixel.gif" width="1" height="1">
       </form>
-      <a href="#" class="pop"><div><a href="#galleries">Back to Top</a></div>
-      <hr />
+
+      <br />
     </div>
 
-    <br />
-
     <!-- Stickers -->
-    <div data-bind="foreach: stickers">
-      <h3 data-bind="text: title" id="art-stickers"></h3>
-      <div><p data-bind="text: description"></p></div>
-      <div data-bind="foreach: image_urls">
-        <div class="image-thumb">
-          <a href="#" class="pop" data-bind="click: $root.popup">
-            <img src="" class="thumbnail" data-bind="attr: { src: url }">
-          </a>
-        </div>
+    <div class="shop-item" id="art-stickers">
+      <div class="shop-header">
+        <h3>Art Sticker Packs: 4 for $5</h3>
+        <p class="description">4 inch square vinyl stickers - set of 4: Eagerness, Bliss, Shpongle, and Cracking Under the Pressure</p>
       </div>
+
+      <div class="shop-banner"><img src="images/shop/stickersBanner.png"></div>
+
+      <span><img class="art-choice" src="images/shop/stickers.jpg"></span>
+
       <form class="paypal-button" target="paypal" action="https://www.paypal.com/cgi-bin/webscr" method="post">
         <input type="hidden" name="cmd" value="_s-xclick">
         <input type="hidden" name="hosted_button_id" value="NRKH98RX3HQN6">
         <input type="image" src="https://www.paypalobjects.com/en_US/i/btn/btn_cart_LG.gif" border="0" name="submit" alt="PayPal - The safer, easier way to pay online!">
         <img alt="" border="0" src="https://www.paypalobjects.com/en_US/i/scr/pixel.gif" width="1" height="1">
       </form>
-      <a href="#" class="pop"><div><a href="#galleries">Back to Top</a></div>
-      <hr />
+      <br />
     </div>
 
-    <br />
-
     <!-- Gift Packs -->
-    <div data-bind="foreach: giftPacks">
-      <h3 data-bind="text: title" id="art-gifts"></h3>
-      <div><p data-bind="text: description"></p></div>
-      <div data-bind="foreach: image_urls">
-        <div class="image-thumb">
-          <a href="#" class="pop" data-bind="click: $root.popup">
-            <img src="" class="thumbnail" data-bind="attr: { src: url }">
-          </a>
-        </div>
+    <div class="shop-item" id="art-gifts">
+      <div class="shop-header">
+        <h3>Art Gift Packs and Mystery Packs: $30.</h3>
+        <p class="description">Themed Packs available for Eagerness and Bliss, include 1 sticker, 1 giclee print, 1 button, and 1 magnet. Mystery Packs include a sticker pack, 1 giclee print, 1 magnet, and 1 button at random.</p>
       </div>
+
+      <div class="shop-banner"><img src="images/shop/mysteryBanner.png"></div>
+
+      <span><img class="art-choice" src="" data-bind="attr: { src: giftPackChoice }"></span>
+
       <form class="paypal-button" target="paypal" action="https://www.paypal.com/cgi-bin/webscr" method="post">
         <input type="hidden" name="cmd" value="_s-xclick">
         <input type="hidden" name="hosted_button_id" value="8C5KXW59LWVLS">
         <table>
         <tr><td><input type="hidden" name="on0" value="Choice of Art">Choice of Art</td></tr><tr><td>
-          <select name="os0" id="gift-packs" data-bind="event:{ change: $root.selectArt}">
+          <select name="os0" id="gift-packs" data-bind="event:{ change: selectGift}">
             <option value="Bliss Theme">Bliss Theme</option>
             <option value="Eagerness Theme">Eagerness Theme</option>
             <option value="Mystery Gift Pack">Mystery Gift Pack</option>
@@ -206,13 +196,11 @@
         <input type="image" src="https://www.paypalobjects.com/en_US/i/btn/btn_cart_LG.gif" border="0" name="submit" alt="PayPal - The safer, easier way to pay online!">
         <img alt="" border="0" src="https://www.paypalobjects.com/en_US/i/scr/pixel.gif" width="1" height="1">
       </form>
-      <span><img class="art-choice" src="" data-bind="attr: { src: $parent.giftPackChoice }"></span>
-      <a href="#" class="pop"><div><a href="#galleries">Back to Top</a></div>
-      <hr />
+      <br />
     </div>
 
     <!-- View Cart -->
-    <div class="shop-buttons">
+    <div class="view-cart">
       <form class="paypal-button" target="paypal" action="https://www.paypal.com/cgi-bin/webscr" method="post" >
         <input type="hidden" name="cmd" value="_s-xclick">
         <input type="hidden" name="encrypted" value="-----BEGIN PKCS7-----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-----END PKCS7-----">
@@ -220,18 +208,6 @@
         <img alt="" border="0" src="https://www.paypalobjects.com/en_US/i/scr/pixel.gif" width="1" height="1">
       </form>
     </div>
-
-
-    <div id="other">
-      <h2>Other Products Available</h2>
-      <div class="mediaCard">
-        <a href="http://www.amazon.com/Painted-Sands-Time-Maryanne-Peters/dp/132000217X" target="blank">
-          <img src="images/shop/artBook.png" alt="art book for sale on amazon">
-        </a>
-      </div>
-      <a href="#" class="pop"><div><a href="#galleries">Back to Top</a></div>
-    </div>
-  </div>
 
 <div class="contact">
   <a href="https://www.linkedin.com/in/maryanne-mac-peters-56ab9b38?trk=hp-identity-name" target="_blank"><img src="images/social/linkedin.png"></a>

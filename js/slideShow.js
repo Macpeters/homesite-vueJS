@@ -55,11 +55,11 @@ var slideImages = [
     title: "Web and Mobile Games",
     link: "dev.html#games"
   },
-  {
-    url: "images/slideshow/stopMotion.png",
-    title: "Stop Motion Animations",
-    link: "#"
-  },
+  // {
+  //   url: "images/slideshow/stopMotion.png",
+  //   title: "Stop Motion Animations",
+  //   link: "#"
+  // },
   {
     url: "images/slideshow/murals.png",
     title: "Murals",
@@ -68,7 +68,7 @@ var slideImages = [
   {
     url: "images/slideshow/tarot.png",
     title: "Hidden Dreams Tarot",
-    link: "#"
+    link: "tarot.html"
   },
   {
     url: "images/slideshow/skateboards.png",

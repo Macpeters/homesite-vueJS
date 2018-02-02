@@ -1,0 +1,50 @@
+.tarot {
+  text-align: center;
+}
+
+.tarot p {
+  font-size: 16px;
+  line-height: 1.5;
+}
+
+.header-img {
+  max-height: 200px;
+  width: auto;
+}
+
+div {
+  padding: 20px;
+}
+
+.teaser-image {
+  max-width: 500px;
+  height: auto;
+}
+
+.subscriber {
+  background-color: #eef;
+  font-size: 24px;
+}
+
+.subscriber label {
+  font-size: 24px;
+}
+
+.email{
+  font-size:24px;
+  max-width: 80%;
+  height: 24px;
+  width: 400px;
+}
+
+#mc-embedded-subscribe {
+  height: 50px;
+  width: 100px;
+  color: #000;
+  font-size: 18px;
+  font-weight: bold;
+  background-color: #87C9F2;
+}
+#mc_embed_signup_scroll p {
+  font-size: 20px;
+}

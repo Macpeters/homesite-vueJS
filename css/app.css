@@ -4,6 +4,7 @@
 @import url("art.css");
 @import url("artShop.css");
 @import url("artGifts.css");
+@import url("tarot.css");
 
 @@ -21,3 +21,59 @@
 @-ms-viewport{ width: device-width; }

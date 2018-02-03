@@ -42,16 +42,19 @@ var SlideShow = function(images) {
 var slideImages = [
   {
     url: "images/slideshow/fineArt.png",
+    alt: "Macpeters Fine Art",
     title: "Fine Art",
     link: "art.html#fineArt"
   },
   {
     url: "images/slideshow/artGifts.png",
+    alt: "Macpeters Art Gifts: Pillows, Mugs, Tshirts, Phone Cases, and more",
     title: "Art Gifts",
     link: "artGifts.html"
   },
   {
     url: "images/slideshow/games.png",
+    alt: "Macpeters Independant Web and Mobile Games",
     title: "Web and Mobile Games",
     link: "dev.html#games"
   },
@@ -62,16 +65,19 @@ var slideImages = [
   // },
   {
     url: "images/slideshow/murals.png",
+    alt: "Macpeters Indoor and Outdoor Murals",
     title: "Murals",
     link: "art.html#graf"
   },
   {
     url: "images/slideshow/tarot.png",
-    title: "Hidden Dreams Tarot",
+    alt: "Macpeters: Hidden Dreams Tarot Deck",
+    title: "Macpeters: Hidden Dreams Tarot Deck",
     link: "tarot.html"
   },
   {
     url: "images/slideshow/skateboards.png",
+    alt: "Painted Skateboard Decks",
     title: "Skateboard Decks",
     link: "art.html#skateboard"
   }

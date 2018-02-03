@@ -1,43 +1,54 @@
 <head>
   <meta charset="utf-8">
-  <meta name="description" content="Macpeters Creations: Visionary Psychedelic Paintings">
-  <meta name="keywords" content="art, uv, blacklight, visionary art, canadian, toronto, skateboard art, psychedelic art, grateful dead, dr. who, shpongle, codex6, robot, spraypaint, murals, graffiti, frogs, sacred geometry, metatrons cube, jellyfish, monsters, feels monsters, gratitude, sunrise">
+  <meta name="description" content="Macpeters Creations: Prints, Magnets, Stickers">
+  <meta name="keywords" content="art, prints, stickers, visionary art, psychedelic art, magnets, print products, psychedelic art">
   <meta name="author" content="Mac Peters">
   <meta name="viewport" content="width=device-width, initial-scale=1"/>
   <meta name="google-site-verification" content="ZxmnP8EXJRjiayUi1MzTxW0p9D">
 
-  <meta property="og:title" content="Macpeters visionary psychedelic artwork" />
-  <meta property="og:type" content="Paintings Gallery" />
+  <meta property="og:title" content="Macpeters Creations: Prints, Magnets, Stickers" />
+  <meta property="og:type" content="Macpeters Creations: Prints, Magnets, Stickers" />
   <meta property="og:url" content="http://www.macpeters.com/art.html" />
-  <meta property="og:description" content="Macpeters Creations: Visionary Psychedelic Paintings" />
-  <meta property="og:site_name" content="Macpeters Creations: Visionary Psychedelic Paintings" />
+  <meta property="og:description" content="Macpeters Creations: Prints, Magnets, Stickers" />
+  <meta property="og:site_name" content="Macpeters Creations: Prints, Magnets, Stickers" />
 
-  <title>Macpeters - Art Store</title>
+  <title>Macpeters - Art Shop</title>
 
-  <link rel="stylesheet" href="css/app.css">
-  <link rel="stylesheet" href="css/bootstrap/bootstrap.css">
+  <link rel="stylesheet" href="../css/app.css">
+  <link rel="stylesheet" href="../css/bootstrap/bootstrap.css">
 
   <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
-  <script src="lib/bootstrap.min.js"></script>
-  <script type='text/javascript' src='lib/knockout-3.4.2.js'></script>
+  <script src="../lib/bootstrap.min.js"></script>
+  <script type='text/javascript' src='../lib/knockout-3.4.2.js'></script>
 </head>
 
 <body>
-  <div><img src="images/header.png" class="header-image"></div>
+  <div><img src="../images/header.png" class="header-image"></div>
+
   <div class="nav-header">
-    <a href="index.html" class="logo"><img src="images/logo.png" alt="Macpeters Creations" title="Macpeters Creations"></a>
-    <a href="dev.html" class="nav-link">Development/Programming</a>
-    <a href="art.html" class="nav-link">Art/Design</a>
+    <a href="../index.html"><img src="../images/logo.png" alt="Macpeters Creations" title="Macpeters Creations"></a>
+    <a href="../dev.html" class="dropbtn">Development/Programming</a>
+    <div class="dropdown">
+      <label for="show-menu" class="show-menu dropbtn">Art/Design</label>
+      <input type="checkbox" id="show-menu" role="button">
+      <div class="dropdown-content">
+        <a href="../art.html">Fine Art</a>
+        <a href="skateboards.html">Painted Skateboards</a>
+        <a href="murals.html">Murals/Aerosol</a>
+        <a href="artServices.html">Services</a>
+        <a href="../tarot.html">Hidden Dreams Tarot</a>
+        <hr />
+        <a href="artShop.html">Shop</a>
+        <a href="artAbout.html">About Me</a>
+        <a href="https://macpetersart.wordpress.com/" target="blank">Blog</a>
+      </div>
+    </div>
   </div>
 
-  <div class="sub-nav">
-    <a href="art.html"><h2>Art</h2></a> |
-    <a href="artServices.html"><h2>Services</h2></a> |
-    <a href="https://macpetersart.wordpress.com/" target="blank"><h2 id="galleries"><img src="images/social/wordpress.png">Blog</h2></a> |
-    <a href="artAbout.html"><h2>About</h2></a> |
-    <a href="artShop.html"><h2>Shop</h2></a> |
-    <a href="artGifts.html"><h2>Gifts</h2></a>
-  </div>
+  <h1 class="sub-nav">
+    <a href="artShop.html">Prints</a>
+    <a href="artGifts.html">Gifts</a>
+  </h1>
 
   <div class="shop-buttons">
     <span class="btn btn-default"><a href="#art-prints">Giclee Prints</a></span>
@@ -61,9 +72,9 @@
     <div class="shop-item" id="art-prints">
       <div class="shop-header">
         <h3>Limited Edition Giclee Art Prints: $20</h3>
-        <p class="description">High quality 8x10 inch prints, signed and numbered. Premium lustre and enhanced matte archival quality giclee</p>
+        <p class="page-description">High quality 8x10 inch prints, signed and numbered. Premium lustre and enhanced matte archival quality giclee</p>
       </div>
-      <div class="shop-banner"><img src="images/shop/printsBanner.png"></div>
+      <div class="shop-banner"><img src="../images/shop/printsBanner.png"></div>
 
       <span><img class="art-choice" src="" data-bind="attr: { src: printChoice }"></span>
 <!-- TODO: Change the price in paypall  -->
@@ -101,10 +112,10 @@
     <div class="shop-item" id="art-magnets">
       <div class="shop-header">
         <h3>Art Magnets: $3</h3>
-        <p class="description">2x2 inch flat art magnets.  Great for hanging on your fridge, locker, or filing cabinet.</p>
+        <p class="page-description">2x2 inch flat art magnets.  Great for hanging on your fridge, locker, or filing cabinet.</p>
       </div>
 
-      <div class="shop-banner"><img src="images/shop/magnetsBanner.png"></div>
+      <div class="shop-banner"><img src="../images/shop/magnetsBanner.png"></div>
 
       <span><img class="art-choice" src="" data-bind="attr: { src: magnetChoice }"></span>
 
@@ -133,11 +144,11 @@
     <div class="shop-item" id="art-buttons">
       <div class="shop-header">
         <h3>Art Buttons: 3 for $10</h3>
-        <p class="description">1 inch square buttons - set of 3 Feels Monsters: Eagerness, Bliss, and Stubborn Resentment</p>
+        <p class="page-description">1 inch square buttons - set of 3 Feels Monsters: Eagerness, Bliss, and Stubborn Resentment</p>
       </div>
-      <div class="shop-banner"><img src="images/shop/buttonsBanner.png"></div>
+      <div class="shop-banner"><img src="../images/shop/buttonsBanner.png"></div>
 
-      <span><img class="art-choice" src="images/shop/buttons.jpg"></span>
+      <span><img class="art-choice" src="../images/shop/buttons.jpg"></span>
 
       <form class="paypal-button" target="paypal" action="https://www.paypal.com/cgi-bin/webscr" method="post">
         <input type="hidden" name="cmd" value="_s-xclick">
@@ -154,12 +165,12 @@
     <div class="shop-item" id="art-stickers">
       <div class="shop-header">
         <h3>Art Sticker Packs: 4 for $5</h3>
-        <p class="description">4 inch square vinyl stickers - set of 4: Eagerness, Bliss, Shpongle, and Cracking Under the Pressure</p>
+        <p class="page-description">4 inch square vinyl stickers - set of 4: Eagerness, Bliss, Shpongle, and Cracking Under the Pressure</p>
       </div>
 
-      <div class="shop-banner"><img src="images/shop/stickersBanner.png"></div>
+      <div class="shop-banner"><img src="../images/shop/stickersBanner.png"></div>
 
-      <span><img class="art-choice" src="images/shop/stickers.jpg"></span>
+      <span><img class="art-choice" src="../images/shop/stickers.jpg"></span>
 
       <form class="paypal-button" target="paypal" action="https://www.paypal.com/cgi-bin/webscr" method="post">
         <input type="hidden" name="cmd" value="_s-xclick">
@@ -174,10 +185,10 @@
     <div class="shop-item" id="art-gifts">
       <div class="shop-header">
         <h3>Art Gift Packs and Mystery Packs: $30.</h3>
-        <p class="description">Themed Packs available for Eagerness and Bliss, include 1 sticker, 1 giclee print, 1 button, and 1 magnet. Mystery Packs include a sticker pack, 1 giclee print, 1 magnet, and 1 button at random.</p>
+        <p class="page-description">Themed Packs available for Eagerness and Bliss, include 1 sticker, 1 giclee print, 1 button, and 1 magnet. Mystery Packs include a sticker pack, 1 giclee print, 1 magnet, and 1 button at random.</p>
       </div>
 
-      <div class="shop-banner"><img src="images/shop/mysteryBanner.png"></div>
+      <div class="shop-banner"><img src="../images/shop/mysteryBanner.png"></div>
 
       <span><img class="art-choice" src="" data-bind="attr: { src: giftPackChoice }"></span>
 
@@ -210,11 +221,11 @@
     </div>
 
 <div class="contact">
-  <a href="https://www.linkedin.com/in/maryanne-mac-peters-56ab9b38?trk=hp-identity-name" target="_blank"><img src="images/social/linkedin.png"></a>
-  <a href="mailto:peters.maryanne@gmail.com" target="_blank"><img src="images/social/email.png" alt="email" title="email"</a>
-  <a href="https://twitter.com/MaryannePeters" target="_blank"><img src="images/social/twitter.png" alt="twitter" title="twitter"></a>
-  <a href="https://www.facebook.com/macpetersArt/" target="_blank"><img src="images/social/facebook.png" alt="facebook" title="facebook"></a>
-  <a href="https://www.instagram.com/macpetersart/?hl=en" target="_blank"><img src="images/social/instagram.jpg" alt="instagram" title="instagram"></a>
+  <a href="https://www.linkedin.com/in/maryanne-mac-peters-56ab9b38?trk=hp-identity-name" target="_blank"><img src="../images/social/linkedin.png"></a>
+  <a href="mailto:peters.maryanne@gmail.com" target="_blank"><img src="../images/social/email.png" alt="email" title="email"</a>
+  <a href="https://twitter.com/MaryannePeters" target="_blank"><img src="../images/social/twitter.png" alt="twitter" title="twitter"></a>
+  <a href="https://www.facebook.com/macpetersArt/" target="_blank"><img src="../images/social/facebook.png" alt="facebook" title="facebook"></a>
+  <a href="https://www.instagram.com/macpetersart/?hl=en" target="_blank"><img src="../images/social/instagram.jpg" alt="instagram" title="instagram"></a>
 </div>
 </body>
 
@@ -241,4 +252,4 @@
   </div>
 </div>
 
-<script src="js/shopList.js"></script>
+<script src="../js/shopList.js"></script>

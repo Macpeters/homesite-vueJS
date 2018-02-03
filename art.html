@@ -1,18 +1,18 @@
 <head>
   <meta charset="utf-8">
-  <meta name="description" content="Macpeters Creations: Visionary Psychedelic Paintings">
-  <meta name="keywords" content="art, uv, blacklight, visionary art, canadian, toronto, skateboard art, psychedelic art, grateful dead, dr. who, shpongle, codex6, robot, spraypaint, murals, graffiti, frogs, sacred geometry, metatrons cube, jellyfish, monsters, feels monsters, gratitude, sunrise">
-  <meta name="author" content="Mac Peters">
+  <meta name="description" content="Macpeters Creations: Visionary and Lowbrow Psychedelic Paintings">
+  <meta name="keywords" content="visionary art, fine art, paintings, blacklight art, psychedelic, trippy, dmt, mushrooms, acid, lsd, metatrons cube, sacred geometry, sacred art, spiritual art">
+  <meta name="author" content="MacPeters">
   <meta name="viewport" content="width=device-width, initial-scale=1"/>
   <meta name="google-site-verification" content="ZxmnP8EXJRjiayUi1MzTxW0p9D">
 
-  <meta property="og:title" content="Macpeters visionary psychedelic artwork" />
-  <meta property="og:type" content="Paintings Gallery" />
+  <meta property="og:title" content="Macpeters Creations: Visionary and Lowbrow Psychedelic Paintings" />
+  <meta property="og:type" content="Macpeters Creations: Visionary and Lowbrow Psychedelic Paintings" />
   <meta property="og:url" content="http://www.macpeters.com/art.html" />
-  <meta property="og:description" content="Macpeters Creations: Visionary Psychedelic Paintings" />
-  <meta property="og:site_name" content="Macpeters Creations: Visionary Psychedelic Paintings" />
+  <meta property="og:description" content="Macpeters Creations: Visionary and Lowbrow Psychedelic Paintings" />
+  <meta property="og:site_name" content="Macpeters Creations: Visionary and Lowbrow Psychedelic Paintings" />
 
-  <title>Macpeters Creations: Visionary Psychedelic Paintings</title>
+  <title>Macpeters Creations: Visionary and Lowbrow Psychedelic Paintings</title>
 
   <link rel="stylesheet" href="css/app.css">
   <link rel="stylesheet" href="css/bootstrap/bootstrap.css">
@@ -24,96 +24,40 @@
 
 <body>
   <div><img src="images/header.png" class="header-image"></div>
+
   <div class="nav-header">
     <a href="index.html" class="logo"><img src="images/logo.png" alt="Macpeters Creations" title="Macpeters Creations"></a>
-    <a href="dev.html" class="nav-link">Development/Programming</a>
-    <a href="art.html" class="nav-link">Art/Design</a>
+    <a href="dev.html" class="dropbtn">Development/Programming</a>
+    <div class="dropdown">
+      <label for="show-menu" class="show-menu dropbtn">Art/Design</label>
+      <input type="checkbox" id="show-menu" role="button">
+      <div class="dropdown-content">
+        <a href="art.html">Fine Art</a>
+        <a href="art/skateboards.html">Painted Skateboards</a>
+        <a href="art/murals.html">Murals/Aerosol</a>
+        <a href="art/artServices.html">Services</a>
+        <a href="tarot.html">Hidden Dreams Tarot</a>
+        <hr />
+        <a href="art/artShop.html">Shop</a>
+        <a href="art/artAbout.html">About Me</a>
+        <a href="https://macpetersart.wordpress.com/" target="blank">Blog</a>
+      </div>
+    </div>
   </div>
 
-<!-- Nav -->
-  <div class="sub-nav">
-    <a href="art.html"><h2>Art</h2></a> |
-    <a href="artServices.html"><h2>Services</h2></a> |
-    <a href="https://macpetersart.wordpress.com/" target="blank"><h2 id="galleries"><img src="images/social/wordpress.png">Blog</h2></a> |
-    <a href="artAbout.html"><h2>About</h2></a> |
-    <a href="artShop.html"><h2>Shop</h2></a> |
-    <a href="artGifts.html"><h2>Gifts</h2></a>
-  </div>
-  <div class="shop-buttons">
-    <span class="btn btn-default"><a href="#fineArt">Fine Art</a></span>
-    <span class="btn btn-default"><a href="#skateboard">Skateboards</a></span>
-    <span class="btn btn-default"><a href="#graf">Murals/Aerosol</a></span>
-  </div>
+  <h1>Macpeters: Fine Art</h1>
 
-  <!-- Art Galleries -->
   <div class="art-gallery">
-    <!-- Fine Art -->
-    <div class="art-category">
-      <h3 id="fineArt">Fine Art</h3>
-      <p><h4>Feels Monsters</h4>  These characters are intended to personify a single emotional state - I want the viewer to look at one of these characters, and immediately feel what that character is feeling.</p>
-      <div data-bind="foreach: feelsMonsters">
-          <div class="image-thumb">
-            <a href="#" class="pop" data-bind="click: $parent.popup">
-              <img src="" class="thumbnail" data-bind="attr: { src: url, alt: title }">
-            </a>
-            <div class="image-title" data-bind="text: title"></div>
-          </div>
-      </div>
-      <p><h4>All the Feels</h4> Strong, complex, overwhelming feeling - I believe it's important to Feel Everything As Real, to explore the entirety of each experience.  All of these feelings are fleeting, and worth exploring while they are present.  They add context, and provide valuable insight into one's self and surroundings.</p>
-      <div data-bind="foreach: allTheFeels">
-          <div class="image-thumb">
-            <a href="#" class="pop" data-bind="click: $parent.popup">
-              <img src="" class="thumbnail" data-bind="attr: { src: url, alt: title }">
-            </a>
-            <div class="image-title" data-bind="text: title"></div>
-          </div>
-      </div>
-      <p><h4>Sacred Birds</h4> Sacred Geometry and timelessness, here to remind us of what's important in life.  Time and space are vast, and we needn't get caught up in the small stuff.  These sacred birds of the aeons remind us to keep it all in perspective.</p>
-      <div data-bind="foreach: sacredBirds">
-          <div class="image-thumb">
-            <a href="#" class="pop" data-bind="click: $parent.popup">
-              <img src="" class="thumbnail" data-bind="attr: { src: url, alt: title }">
-            </a>
-            <div class="image-title" data-bind="text: title"></div>
-          </div>
-      </div>
-      <a href="#" class="pop"><div><a href="#galleries">Back to Top</a></div>
-      <hr />
+    <div data-bind="foreach: artImages">
+      <img class="thumbnail" src="" data-bind="attr: { src: url, alt: title }, click: $parent.selectImage">
     </div>
-
-    <!-- Skateboards -->
-    <div class="art-category">
-      <h3 id="skateboard">Skateboards</h3>
-      <p>All of these skateboards have had their fun in the sun - they are the cracked remnants of their former selves, given new life.  Original, one of a kind painted decks can be purchased for $100 each plus shipping.  Want me to paint your own deck?  Contact me directly.</p>
-      <div data-bind="foreach: skateboards">
-        <div class="image-thumb">
-            <a href="#" class="pop" data-bind="click: $parent.popup">
-              <img src="" class="thumbnail" data-bind="attr: { src: url, alt: title }">
-            </a>
-          <div class="image-title" data-bind="text: title"></div>
-        </div>
-      </div>
-      <a href="#" class="pop"><div><a href="#galleries">Back to Top</a></div>
-      <hr />
+    <div>
+      <div class="featured-image"><img  src="" data-bind="attr: { src: currentImage().url, alt: currentImage().title }"></div>
     </div>
-
-    <!-- Murals -->
-    <div class="art-category">
-      <h3 id="graf">Murals</h3>
-      <p>Indoor and outdoor murals for your store, restaurant, garage, or home.  Freshen up weather beaten or tagged outdoor areas with a colourful mural.</p>
-      <div data-bind="foreach: murals">
-        <div class="image-thumb">
-          <a href="#" class="pop" data-bind="click: $parent.popup">
-            <img src="" class="thumbnail" data-bind="attr: { src: url, alt: title }">
-          </a>
-          <div class="image-title" data-bind="text: title"></div>
-        </div>
-      </div>
-      <a href="#" class="pop"><div><a href="#galleries">Back to Top</a></div>
-      <hr />
-    </div>
-
   </div>
+
+
+    <script src="../js/imageList.js"></script>
 
   <!-- Contact -->
   <div class="contact">

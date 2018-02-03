@@ -14,31 +14,39 @@
 
   <title>Macpeters - Art Services</title>
 
-  <link rel="stylesheet" href="css/app.css">
-  <link rel="stylesheet" href="css/bootstrap/bootstrap.css">
+  <link rel="stylesheet" href="../css/app.css">
+  <link rel="stylesheet" href="../css/bootstrap/bootstrap.css">
 
   <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
-  <script src="lib/bootstrap.min.js"></script>
-  <script src="js/app.js"></script>
+  <script src="../lib/bootstrap.min.js"></script>
+  <script src="../js/app.js"></script>
 </head>
 
 
 <body>
-  <div><img src="images/header.png" class="header-image"></div>
+  <div><img src="../images/header.png" class="header-image"></div>
+
   <div class="nav-header">
-    <a href="index.html" class="logo"><img src="images/logo.png" alt="Macpeters Creations" title="Macpeters Creations"></a>
-    <a href="dev.html" class="nav-link">Development/Programming</a>
-    <a href="art.html" class="nav-link">Art/Design</a>
+    <a href="../index.html"><img src="../images/logo.png" alt="Macpeters Creations" title="Macpeters Creations"></a>
+    <a href="../dev.html" class="dropbtn">Development/Programming</a>
+    <div class="dropdown">
+      <label for="show-menu" class="show-menu dropbtn">Art/Design</label>
+      <input type="checkbox" id="show-menu" role="button">
+      <div class="dropdown-content">
+        <a href="../art.html">Fine Art</a>
+        <a href="skateboards.html">Painted Skateboards</a>
+        <a href="murals.html">Murals/Aerosol</a>
+        <a href="artServices.html">Services</a>
+        <a href="../tarot.html">Hidden Dreams Tarot</a>
+        <hr />
+        <a href="artShop.html">Shop</a>
+        <a href="artAbout.html">About Me</a>
+        <a href="https://macpetersart.wordpress.com/" target="blank">Blog</a>
+      </div>
+    </div>
   </div>
 
-  <div class="sub-nav">
-    <a href="art.html"><h2>Art</h2></a> |
-    <a href="artServices.html"><h2>Services</h2></a> |
-    <a href="https://macpetersart.wordpress.com/" target="blank"><h2 id="galleries"><img src="images/social/wordpress.png">Blog</h2></a> |
-    <a href="artAbout.html"><h2>About</h2></a> |
-    <a href="artShop.html"><h2>Shop</h2></a> |
-    <a href="artGifts.html"><h2>Gifts</h2></a>
-  </div>
+  <h1>Macpeters: Art Services</h1>
 
   <div class="shop-buttons">
     <span class="btn btn-default"><a href="#livePainting">Live Painting</a></span>
@@ -46,9 +54,10 @@
     <span class="btn btn-default"><a href="#tapestries">UV Tapestry Rental</a></span>
     <span class="btn btn-default"><a href="#toys">Blacklight Party Crafting</a></span>
   </div>
+
   <div class="art-gallery">
     <h3 id="livePainting">Live Painting</h3>
-    <div><p>Give your guests the opportunity to see art in action.  I will produce a painting at your event, on any theme of your choosing.</p></div>
+    <div class="page-description">Give your guests the opportunity to see art in action.  I will produce a painting at your event, on any theme of your choosing.</div>
     <div>
       <iframe width="560" height="315" src="https://www.youtube.com/embed/IlvqReXgE-I" frameborder="0" gesture="media" allowfullscreen></iframe>
       <a href="#" class="pop"><div><a href="#galleries">Back to Top</a></div>
@@ -56,67 +65,67 @@
     </div>
 
     <h3 id="deco">UV/Blacklight Deco</h3>
-    <div><p>Make your event magical with blacklight reactive deco</p></div>
-    <div>
-      <img src="images/uv/deco.png" class="crafts" alt="Blacklight Deco" title="Blacklight Deco">
+    <div class="page-description">Make your event magical with blacklight reactive deco</div>
+    <div class="featured-image">
+      <img src="../images/uv/deco.png"alt="Macpeters Blacklight Deco" title="Macpeters Blacklight Deco">
       <a href="#" class="pop"><div><a href="#galleries">Back to Top</a></div>
       <hr />
     </div>
 
     <h3 id="tapestries">UV/Blacklight Reactive Tapestry Rentals</h3>
-    <div><p>These are painted on loose canvas, and can be rolled up and brought to outdoor festivals, blacklight events, and park outings. The pieces are of varying sizes, and can be arranged according to the space.  Each painting is fitted with grommets for easy hanging.</p></div>
+    <div class="page-description">These are painted on loose canvas, and can be rolled up and brought to outdoor festivals, blacklight events, and park outings. The pieces are of varying sizes, and can be arranged according to the space.  Each painting is fitted with grommets for easy hanging.</div>
     <div class="art-category">
       <div class="image-thumb">
         <a href="#" class="pop">
-          <img src="images/tapestries/unicornSplash.png"  alt="Unicorn Splash by Macpeters" title="Unicorn Splash by Macpeters" class="thumbnail">
+          <img src="../images/tapestries/unicornSplash.png"  alt="Unicorn Splash by Macpeters" title="Unicorn Splash by Macpeters" class="thumbnail">
         </a>
         <div class="image-title">Unicorn Splash</div>
       </div>
       <div class="image-thumb">
         <a href="#" class="pop">
-          <img src="images/tapestries/alienLotus.png" alt="Alien Lotus by Macpeters" title="Alien Lotus by Macpeters" class="thumbnail">
+          <img src="../images/tapestries/alienLotus.png" alt="Alien Lotus by Macpeters" title="Alien Lotus by Macpeters" class="thumbnail">
         </a>
         <div class="image-title">Alien Lotus</div>
       </div>
       <div class="image-thumb">
         <a href="#" class="pop">
-          <img src="images/tapestries/NoWorries.png"  alt="No Worries, I'm Friendl-eye by Macpeters" title="No Worries, I'm Friendl-eye by Macpeters" class="thumbnail">
+          <img src="../images/tapestries/NoWorries.png"  alt="No Worries, I'm Friendl-eye by Macpeters" title="No Worries, I'm Friendl-eye by Macpeters" class="thumbnail">
         </a>
         <div class="image-title">No Worries, I'm Friendl-eye</div>
       </div>
       <div class="image-thumb">
         <a href="#" class="pop">
-          <img src="images/tapestries/fishpond.png"  alt="Fishpond by Macpeters" title="Fishpond by Macpeters" class="thumbnail">
+          <img src="../images/tapestries/fishpond.png"  alt="Fishpond by Macpeters" title="Fishpond by Macpeters" class="thumbnail">
         </a>
         <div class="image-title">Fish Pond</div>
       </div>
       <div class="image-thumb">
         <a href="#" class="pop">
-          <img src="images/tapestries/dreamscape.png"  alt="Dreamscape by Macpeters" title="Dreamscape by Macpeters" class="thumbnail">
+          <img src="../images/tapestries/dreamscape.png"  alt="Dreamscape by Macpeters" title="Dreamscape by Macpeters" class="thumbnail">
         </a>
         <div class="image-title">Dreamscape</div>
       </div>
       <div class="image-thumb">
         <a href="#" class="pop">
-          <img src="images/tapestries/reflectingFrog.png"  alt="Reflecting Frog by Macpeters" title="Reflecting Frog by Macpeters" class="thumbnail">
+          <img src="../images/tapestries/reflectingFrog.png"  alt="Reflecting Frog by Macpeters" title="Reflecting Frog by Macpeters" class="thumbnail">
         </a>
         <div class="image-title">Reflecting Frog</div>
       </div>
       <div class="image-thumb">
         <a href="#" class="pop">
-          <img src="images/tapestries/treeOfLife.png"  alt="Tree of Life by Macpeters" title="Tree of Life by Macpeters" class="thumbnail">
+          <img src="../images/tapestries/treeOfLife.png"  alt="Tree of Life by Macpeters" title="Tree of Life by Macpeters" class="thumbnail">
         </a>
         <div class="image-title">Tree of Life</div>
       </div>
       <div class="image-thumb">
         <a href="#" class="pop">
-          <img src="images/tapestries/mushDude.png" alt="Mushroom Spirit by Macpeters" title="Mushroom Spirit by Macpeters" class="thumbnail">
+          <img src="../images/tapestries/mushDude.png" alt="Mushroom Spirit by Macpeters" title="Mushroom Spirit by Macpeters" class="thumbnail">
         </a>
         <div class="image-title">Mushroom Guide</div>
       </div>
       <div class="image-thumb">
         <a href="#" class="pop">
-          <img src="images/tapestries/dubfx.png" alt="DubFX by Macpeters" title="DubFX by Macpeters" class="thumbnail">
+          <img src="../images/tapestries/dubfx.png" alt="DubFX by Macpeters" title="DubFX by Macpeters" class="thumbnail">
         </a>
         <div class="image-title">Dub FX</div>
       </div>
@@ -124,15 +133,12 @@
     </div>
 
     <h3 id="toys">Blacklight Party Crafting</h3>
-    <div><p>A great way to make your event memorable is to give your guests the opportunity to create something themselves to take home as a souvenir.  Using low cost materials, a number of fun crafts and artworks can be made under the magical glow of UV light.  I can provide materials, instruction, and encouragement to help your guests enjoy themselves on any occasion.</p></div>
-    <div>
-      <img src="images/uv/crafts.png" class="crafts" alt="Blacklight Crafting" title="Blacklight Crafting">
+    <div class="page-description">A great way to make your event memorable is to give your guests the opportunity to create something themselves to take home as a souvenir.  Using low cost materials, a number of fun crafts and artworks can be made under the magical glow of UV light.  I can provide materials, instruction, and encouragement to help your guests enjoy themselves on any occasion.</div>
+    <div class="featured-image">
+      <img src="../images/uv/crafts.png" alt="Blacklight Crafting" title="Blacklight Crafting">
       <a href="#" class="pop"><div><a href="#galleries">Back to Top</a></div>
     </div>
   </div>
-
-
-
 
 
 
@@ -157,11 +163,11 @@
   </div>
 
 <div class="contact">
-  <a href="https://www.linkedin.com/in/maryanne-mac-peters-56ab9b38?trk=hp-identity-name" target="_blank"><img src="images/social/linkedin.png"></a>
-  <a href="mailto:peters.maryanne@gmail.com" target="_blank"><img src="images/social/email.png" alt="email" title="email"</a>
-  <a href="https://twitter.com/MaryannePeters" target="_blank"><img src="images/social/twitter.png" alt="twitter" title="twitter"></a>
-  <a href="https://www.facebook.com/macpetersArt/" target="_blank"><img src="images/social/facebook.png" alt="facebook" title="facebook"></a>
-  <a href="https://www.instagram.com/macpetersart/?hl=en" target="_blank"><img src="images/social/instagram.jpg" alt="instagram" title="instagram"></a>
+  <a href="https://www.linkedin.com/in/maryanne-mac-peters-56ab9b38?trk=hp-identity-name" target="_blank"><img src="../images/social/linkedin.png" alt="linkedin"></a>
+  <a href="mailto:peters.maryanne@gmail.com" target="_blank"><img src="../images/social/email.png" alt="email" title="email"</a>
+  <a href="https://twitter.com/MaryannePeters" target="_blank"><img src="../images/social/twitter.png" alt="twitter" title="twitter"></a>
+  <a href="https://www.facebook.com/macpetersArt/" target="_blank"><img src="../images/social/facebook.png" alt="facebook" title="facebook"></a>
+  <a href="https://www.instagram.com/macpetersart/?hl=en" target="_blank"><img src="../images/social/instagram.jpg" alt="instagram" title="instagram"></a>
 </div>
 
 </body>

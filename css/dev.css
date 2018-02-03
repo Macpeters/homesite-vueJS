@@ -1,14 +1,12 @@
 /* Dev */
 #demo, #games {
   padding: 15px;
-  text-align: center;
 }
 #games li {
   list-style: none;
 }
 .mediaCard {
   padding-left: 15px;
-  text-align: center;
   display: inline-block;
 }
 .mediaCard img{

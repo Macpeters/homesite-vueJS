@@ -1,5 +1,7 @@
 /* NAV */
-
+ol li{
+  display: inline;
+}
 /* Nav Bar*/
 .nav-header {
   font-size: 18px;

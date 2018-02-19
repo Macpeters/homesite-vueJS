@@ -1,4 +1,13 @@
 <head>
+  <!-- Global site tag (gtag.js) - Google Analytics -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=UA-113895926-1"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+    gtag('config', 'UA-113895926-1');
+  </script>
+
   <meta charset="utf-8">
   <meta name="description" content="Macpeters Hand Painted Skateboard Decks">
   <meta name="keywords" content="skateboard, skateboard deck, painted, skate art, skateart, lowbrow, street art, urban art, dr. who, halloween, grateful dead, visionary">
@@ -44,18 +53,33 @@
       </div>
     </div>
   </div>
+  <ol>
+    <li><a href="http://www.macpeters.com/index.html">Home</a> › </li>
+    <li> <a href="http://www.macpeters.com/art.html">Art</a> › </li>
+    <li> <a href="http://www.macpeters.com/skateboards.html">Skate Art</a> </li>
+  <ol>
 
   <h1>Macpeters: Hand Painted Skateboard Decks</h1>
+
+  <div class="page-description">
+    All of these decks are recycled - they had their day in the sun, and were ridden to near destruction.
+    I enjoy giving new life to something that might otherwise have wound up in a dump somewhere.
+    If you are in Toronto, and have a bunch of old decks lying around, let me know, and I'll take them off your hands - even snapped in half.
+  </div>
 
   <div class="art-gallery">
     <div data-bind="foreach: skateboards">
       <img class="thumbnail" src="" data-bind="attr: { src: url, alt: title }, click: $parent.selectImage">
     </div>
     <div>
-      <div class="featured-image"><img  src="" data-bind="attr: { src: currentImage().url, alt: currentImage().title }"></div>
+      <div class="featured-image">
+        <img  src="" data-bind="attr: { src: currentImage().url, alt: currentImage().title }">
+        <h3 data-bind="text: currentImage().title">Title of Artwork</h3>
+        <h4 data-bind="text: currentImage().description">description of artwork</h4>
+        <div class="keywords">Keywords: <span data-bind="text: currentImage().keywords"></span></div>
+      </div>
     </div>
   </div>
-
 
   <script src="../js/skateboardList.js"></script>
 

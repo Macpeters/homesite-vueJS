@@ -11,6 +11,9 @@
 .image-title {
   clear: both;
 }
+.keywords {
+  color: #bbb;
+}
 
 /* Thumbnails */
 .image-thumb {

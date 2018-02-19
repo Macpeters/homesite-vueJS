@@ -1,4 +1,13 @@
 <head>
+  <!-- Global site tag (gtag.js) - Google Analytics -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=UA-113895926-1"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+    gtag('config', 'UA-113895926-1');
+  </script>
+
   <meta charset="utf-8">
   <meta name="description" content="Macpeters Murals and Street Art">
   <meta name="keywords" content="spraypaint, graffiti, murals, streetart, wall art, spray, paint, outdoor art, alleyway of dreams, garage doors, blacklight art">
@@ -44,15 +53,32 @@
       </div>
     </div>
   </div>
+  <ol>
+    <li><a href="http://www.macpeters.com/index.html">Home</a> › </li>
+    <li> <a href="http://www.macpeters.com/art.html">Art</a> › </li>
+    <li> <a href="http://www.macpeters.com/murals.html">Murals</a> </li>
+  <ol>
 
   <h1>Macpeters: Murals and Aerosol Art</h1>
+
+  <div class="page-description">
+    I haven't used spraypaint for very long, but it sure is fun.
+    Painting on walls is something I've been doing since I was 14 - my bedroom in highschool was one big mural.
+    I find murals are the best opportunity to collaborate with other artists, because there's so much space.
+    I'd love to work with more 3D spaces.
+  </div>
 
   <div class="art-gallery">
     <div data-bind="foreach: murals">
       <img class="thumbnail" src="" data-bind="attr: { src: url, alt: title }, click: $parent.selectImage">
     </div>
     <div>
-      <div class="featured-image"><img  src="" data-bind="attr: { src: currentImage().url, alt: currentImage().title }"></div>
+      <div class="featured-image">
+        <img  src="" data-bind="attr: { src: currentImage().url, alt: currentImage().title }">
+        <h3 data-bind="text: currentImage().title">Title of Artwork</h3>
+        <h4 data-bind="text: currentImage().description">description of artwork</h4>
+        <div class="keywords">Keywords: <span data-bind="text: currentImage().keywords"></span></div>
+      </div>
     </div>
   </div>
 

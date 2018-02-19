@@ -7,51 +7,61 @@
   <!-- Index -->
   <url>
     <loc>http://macpeters.com/</loc>
-    <lastmod>2018-01-27T00:48:19+00:00</lastmod>
+    <lastmod>2018-02-10T00:48:19+00:00</lastmod>
     <priority>1.00</priority>
   </url>
   <url>
     <loc>http://macpeters.com/index.html</loc>
-    <lastmod>2018-01-27T00:48:19+00:00</lastmod>
+    <lastmod>2018-02-10T00:48:19+00:00</lastmod>
     <priority>0.80</priority>
   </url>
 
   <!-- Art -->
   <url>
     <loc>http://macpeters.com/art.html</loc>
-    <lastmod>2018-02-02T03:39:40+00:00</lastmod>
+    <lastmod>2018-02-10T00:48:19+00:00</lastmod>
     <priority>0.80</priority>
   </url>
   <url>
-    <loc>http://macpeters.com/artServices.html</loc>
-    <lastmod>2018-02-02T03:39:48+00:00</lastmod>
+    <loc>http://macpeters.com/art/murals.html</loc>
+    <lastmod>2018-02-10T00:48:19+00:00</lastmod>
+    <priority>0.80</priority>
+  </url>
+  <url>
+    <loc>http://macpeters.com/art/skateboards.html</loc>
+    <lastmod>2018-02-10T00:48:19+00:00</lastmod>
+    <priority>0.80</priority>
+  </url>
+  <url>
+    <loc>http://macpeters.com/art/artServices.html</loc>
+    <lastmod>2018-02-10T00:48:19+00:00</lastmod>
     <priority>0.55</priority>
   </url>
   <url>
-    <loc>http://macpeters.com/artAbout.html</loc>
-    <lastmod>2018-02-02T03:39:45+00:00</lastmod>
+    <loc>http://macpeters.com/art/artAbout.html</loc>
+    <lastmod>2018-02-10T00:48:19+00:00</lastmod>
     <priority>0.55</priority>
   </url>
   <url>
-    <loc>http://macpeters.com/artShop.html</loc>
-    <lastmod>2018-02-02T03:39:48+00:00</lastmod>
+    <loc>http://macpeters.com/art/artShop.html</loc>
+    <lastmod>2018-02-10T00:48:19+00:00</lastmod>
     <priority>0.70</priority>
   </url>
   <url>
-    <loc>http://macpeters.com/artGifts.html</loc>
-    <lastmod>2018-02-02T03:39:46+00:00</lastmod>
+    <loc>http://macpeters.com/art/artGifts.html</loc>
+    <lastmod>2018-02-10T00:48:19+00:00</lastmod>
     <priority>0.75</priority>
   </url>
 
   <!-- DEV -->
   <url>
     <loc>http://macpeters.com/dev.html</loc>
-    <lastmod>2018-01-29T00:21:07+00:00</lastmod>
+    <lastmod>2018-02-10T00:48:19+00:00</lastmod>
     <priority>0.50</priority>
   </url>
   <url>
     <loc>http://macpeters.com/devResume.html</loc>
-    <lastmod>2017-11-08T12:04:15+00:00</lastmod>
+    <lastmod>2018-02-10T00:48:19+00:00</lastmod>
     <priority>0.50</priority>
   </url>
 

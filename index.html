@@ -1,4 +1,32 @@
 <head>
+  <!-- Global site tag (gtag.js) - Google Analytics -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=UA-113895926-1"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+    gtag('config', 'UA-113895926-1');
+  </script>
+
+  <script type="application/ld+json">
+    {
+      "@context": "http://schema.org",
+      "@type": "Person",
+      "name": "Mac Peters",
+      "url": "http://www.macpeters.com",
+      "logo": "http://macpeters.com/images/logo.png",
+      "sameAs": [
+        "https://www.facebook.com/macpetersArt/",
+        "https://www.instagram.com/macpetersart/",
+        "https://twitter.com/MaryannePeters",
+        "https://www.pinterest.ca/macpetersart/",
+        "https://www.youtube.com/channel/UCQlg77YNqMjVlyy_ua93mYg",
+        "http://macpeters22.tumblr.com/",
+        "https://plus.google.com/u/0/+MaryannePeters"
+      ]
+    }
+  </script>
+
   <meta charset="utf-8">
   <meta name="description" content="Macpeters - Maryanne Peters: Programmer/Artist">
   <meta name="keywords" content="programmer, gamedev, gamemaker studio, swift,ios development, android development, web developer, yoyo games, web development, art, uv, blacklight, visionary art, canadian, toronto">
@@ -12,7 +40,7 @@
   <meta property="og:description" content="Macpeters - Maryanne Peters: Programmer/Artist" />
   <meta property="og:site_name" content="Macpeters" />
 
-  <title>Macpeters - Maryanne Peters: Programmer, Artist</title>
+  <title>Macpeters Creations</title>
 
   <link rel="stylesheet" href="css/app.css">
   <link rel="stylesheet" href="css/bootstrap/bootstrap.css">
@@ -44,12 +72,22 @@
       </div>
     </div>
   </div>
+  <ol>
+    <li><a href="http://www.macpeters.com/index.html">Home</a> › </li>
+  <ol>
 
   <div class="slideshow">
     <a href="#" data-bind="attr: { href: currentImage().link }"><img src="" data-bind="attr: { src: currentImage().url, alt: currentImage().alt }"></a>
     <ul data-bind="foreach: slideShowImages" class="slideDots"><li>
       <a data-bind="click: $parent.setSliderImage($data)"><span class="dot"></span></li></a>
     </ul>
+  </div>
+
+  <div class="page-description">
+    Working as a web developer by day, I spend much of my free time making art and games.
+    The art I make ranges from low-brow to psychedelic or visionary.
+    I love collaborating, and working with others.
+    This website is currently made with simple Html, css, and a tiny bit of javascript/knockout.js
   </div>
 
   <div class="contact">

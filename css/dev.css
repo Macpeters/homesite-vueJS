@@ -13,3 +13,15 @@
   width: 125px;
   height: 125px;
 }
+
+.demo-reel {
+  width: 560;
+  height: 315;
+  border: 0;
+}
+
+.itch-game {
+  width: 552;
+  height: 167;
+  border: 0;
+}

@@ -1,20 +1,28 @@
-/* Art */
+/* Art Galleries */
 .art-gallery {
   padding: 20px;
 }
-.art-gallery h3 {
-  background-color: #eee;
+
+/* Featured Image */
+.featured-image img {
+  max-height: 500px;
+  width: auto;
 }
-.art-category h4 {
-  background-color: #eee;
+.image-title {
+  clear: both;
 }
+.keywords {
+  color: #bbb;
+}
+
+/* Thumbnails */
 .image-thumb {
   display: inline-block;
 }
 .thumbnail {
-  width: 125px;
-  height: 125px;
-  padding: 15px;
+  width: 100px;
+  height: 100px;
+  padding: 5px;
   border-width: 1px;
   border-color: #fff;
   border-style: solid;
@@ -27,27 +35,4 @@
 }
 .thumbnail:hover {
   border-color: #ccc;
-}
-.image-title {
-  clear: both;
-  text-align: center;
-}
-.crafts {
-  padding: 15px;
-  width: 70%;
-  height: auto;
-}
-
-/* MODAL */
-.modal-body {
-  max-height: 80%;
-  padding: 15px;
-  overflow-y: auto;
-}
-.square-preview {
-  width: 100%;
-  height: auto;
-}
-.imagepreview-title {
-  font-weight: bold;
 }

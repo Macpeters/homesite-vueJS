@@ -1,6 +1,5 @@
 /* Nav */
 .shop-buttons {
-  text-align: center;
   padding: 10px;
 }
 
@@ -22,11 +21,9 @@
   height: 1px;
   width: 1px;
 }
-
 .view-cart {
   display: block;
   clear: both;
-  text-align: center;
   padding-top: 10px;
 }
 
@@ -47,9 +44,23 @@
   clear: both;
   padding-top: 10px;
 }
+.shop-header h3{
+  background-color: ddd;
+  border-radius: 25px;
+}
 
-.description {
-  font-size: 18px;
+/* Societ6 */
+.select-items img {
+  height: 250px;
+  width: 250px;
   padding: 10px;
-  color: #777;
+}
+.select-items img:hover {
+  opacity: .5;
+}
+@media screen and (max-width: 450px){
+  .thumbnail{
+    width: 80%;
+    height: auto;
+  }
 }

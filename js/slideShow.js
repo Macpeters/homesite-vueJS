@@ -39,44 +39,40 @@ var SlideShow = function(images) {
   });
 };
 
+var base_url = "images/slideshow/macpeters_"
 var slideImages = [
   {
-    url: "images/slideshow/fineArt.png",
+    url: base_url + "fineArt.png",
     alt: "Macpeters Fine Art",
     title: "Fine Art",
     link: "art.html#fineArt"
   },
   {
-    url: "images/slideshow/artGifts.png",
+    url: base_url + "artGifts.png",
     alt: "Macpeters Art Gifts: Pillows, Mugs, Tshirts, Phone Cases, and more",
     title: "Art Gifts",
     link: "artGifts.html"
   },
   {
-    url: "images/slideshow/games.png",
+    url: base_url + "games.png",
     alt: "Macpeters Independant Web and Mobile Games",
     title: "Web and Mobile Games",
     link: "dev.html#games"
   },
-  // {
-  //   url: "images/slideshow/stopMotion.png",
-  //   title: "Stop Motion Animations",
-  //   link: "#"
-  // },
   {
-    url: "images/slideshow/murals.png",
+    url: base_url + "murals.png",
     alt: "Macpeters Indoor and Outdoor Murals",
     title: "Murals",
     link: "art.html#graf"
   },
   {
-    url: "images/slideshow/tarot.png",
+    url: base_url + "hiddenDreamsTarot.png",
     alt: "Macpeters: Hidden Dreams Tarot Deck",
     title: "Macpeters: Hidden Dreams Tarot Deck",
     link: "tarot.html"
   },
   {
-    url: "images/slideshow/skateboards.png",
+    url: base_url + "paintedSkateboards.png",
     alt: "Painted Skateboard Decks",
     title: "Skateboard Decks",
     link: "art.html#skateboard"

@@ -1,6 +1,5 @@
 /* Resume */
 .resume-header {
-  text-align: center;
   font-weight: bold;
 }
 .resume-header div {
@@ -13,9 +12,6 @@
 .resume-sub-header {
   text-align: left;
   font-weight: bold;
-}
-.resume-highlights {
-  text-align: center;
 }
 .title {
   font-weight: bold;

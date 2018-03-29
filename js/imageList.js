@@ -9,8 +9,17 @@ var ImageList = function(images) {
 };
 
 var base_url = "images/fineArt/macpeters_"
-var base_keywords = "painting, visionary, sci-fi, art, blacklight, uv reactive, psychedelic, fantasy, "
+var base_keywords = "painting, visionary, sci-fi, art, blacklight, uv reactive, psychedelic, psychedelic painting, fantasy, "
 var artImages = [
+  {
+    url: base_url + "baphomet.png",
+    title: "Baphomet - Magic Mushroom Magician",
+    subtitle: "24x24 UV Acrylic on canvas",
+    description: "Floating above the golden city that sits on the edge of the Amethyst Mountains, young Baphomet pays no mind to the dance of mortals, for he is filled with the light of the Universe. This piece is what I'm referring to as 'living art', because I haven't varnished it, and I don't plan to until it sells.  I find if I have art around for a little while, I start noticing things I'd like to change, because I've learned new tricks since then.  If I don't varnish the piece, I feel I have the option of going back and updating old art, so it stays interesting to me.  Maybe I'll ruin it, next time I touch it.  Who knows?  If you like how it looks right now, contact me for purchasing.",
+    category: "fine art",
+    subcategory: "Alternate Worlds",
+    keywords: base_keywords + 'baphomet, goat, magician, wonder, magick, magic mushroom, wizardry, horns, horned beast, universal power, universal wonder, inner power, galaxies, otherworldly, glass mushroom, amethyst crystal, seaside city, stone city'
+  },
   {
     url: base_url + "fascination.png",
     title: "Fascination",
@@ -18,7 +27,7 @@ var artImages = [
     description: "Behold the biodiversity of this alien crystaline planet.  What wonders it might hold!",
     category: "fine art",
     subcategory: "Alternate Worlds",
-    keywords: base_keywords + 'white squirrel, butterfly, bubbles, crystals, crystal mountain, cloud faces, long tail, furry animal, cute animal, leafy, water, calm water, flying, serpent, snake skin, sparle, drops'
+    keywords: base_keywords + 'white squirrel, butterfly, bubbles, crystals, crystal mountain, cloud faces, long tail, furry animal, cute animal, leafy, water, calm water, flying, serpent, snake skin, sparkle, drops'
   },
   {
     url: base_url + "eagerness.png",

@@ -26,6 +26,8 @@
   border-width: 1px;
   border-color: #fff;
   border-style: solid;
+  object-fit: cover;
+  overflow: hidden;
 }
 @media screen and (max-width: 450px){
   .thumbnail{

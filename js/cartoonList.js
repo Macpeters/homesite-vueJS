@@ -48,6 +48,12 @@ var cartoonImages = [
     title: "Canary Yellow",
     description: "Just a little songbird - monochromatic.",
     keywords: base_keywords + "canary, songbird, yellow, yellow canary, monochromatic art, color collective, colour study"
+  },
+  {
+    url: base_url + "xenomorph.png",
+    title: "Xenomorph",
+    description: "Always fashionable in her... um...  insect armour exoskeleton",
+    keywords: base_keywords + "xenomorph, alien, aliens, giger, film character, horror, thriller, insect, exoskeleton, species, cyborg, extraterrestrial, movie monster, creatures"
   }
 ]
 

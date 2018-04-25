@@ -10,16 +10,16 @@
   </script>
 
   <meta charset="utf-8">
-  <meta name="description" content="Macpeters Cartoons and Comics">
-  <meta name="keywords" content="cartoons, comics, webcomics">
-  <meta name="author" content="MacPeters">
+  <meta name="title" content="Macpeters Cartoons and Comics">
+  <meta name="description" content="Whimsical, dry humour cartoons using minimal colours">
+  <meta name="keywords" content="cartoons, comics, webcomics, harry potter, nobeef, cow, canary, frog, disney, ursula, wolfman, film characters, funny, cross dresser, drawing practice, challenges, animalalphabets, colourcollective, monochromatic">
+  <meta name="author" content="Mac Peters">
   <meta name="viewport" content="width=device-width, initial-scale=1"/>
   <meta name="google-site-verification" content="ZxmnP8EXJRjiayUi1MzTxW0p9D">
 
   <meta property="og:title" content="Macpeters Cartoons and Comics" />
-  <meta property="og:type" content="Macpeters Cartoons and Comics" />
   <meta property="og:url" content="http://www.macpeters.com/art/cartoons.html" />
-  <meta property="og:description" content="Macpeters Cartoons and Comics" />
+  <meta property="og:description" content="Whimsical, dry humour cartoons using minimal colours" />
   <meta property="og:site_name" content="Macpeters Cartoons and Comics" />
 
   <title>Macpeters Cartoons and Comics</title>
@@ -88,11 +88,11 @@
 
   <div class="art-gallery">
     <div data-bind="foreach: cartoons">
-      <img class="thumbnail" src="" data-bind="attr: { src: url, alt: title }, click: $parent.selectImage">
+      <img class="thumbnail" src="" data-bind="attr: { src: url, alt: title, title: title }, click: $parent.selectImage">
     </div>
     <div>
       <div class="featured-image">
-        <img  src="" data-bind="attr: { src: currentImage().url, alt: currentImage().title }">
+        <img  src="" data-bind="attr: { src: currentImage().url, alt: currentImage().title, title: currentImage().title }">
         <h3 data-bind="text: currentImage().title">Title of Artwork</h3>
         <h4 data-bind="text: currentImage().description">description of artwork</h4>
         <div class="keywords">Keywords: <span data-bind="text: currentImage().keywords"></span></div>

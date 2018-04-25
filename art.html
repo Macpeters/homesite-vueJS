@@ -10,17 +10,17 @@
   </script>
 
   <meta charset="utf-8">
-  <meta name="description" content="Macpeters Creations: Visionary and Lowbrow Psychedelic Paintings">
-  <meta name="keywords" content="visionary art, fine art, paintings, blacklight art, psychedelic, trippy, dmt, mushrooms, acid, lsd, metatrons cube, sacred geometry, sacred art, spiritual art">
-  <meta name="author" content="MacPeters">
+  <meta name="title" content="Macpeters: Visionary, Lowbrow, Psychedelic Blacklight Paintings">
+  <meta name="description" content="Psychedelic visionary blacklight paintings featuring whimsical characters, sacred geometry, and journeys of spiritual enlightenment. Created by Toronto artist, Mac Peters.">
+  <meta name="keywords" content="visionary art, fine art, paintings, blacklight art, uv reactive, psychedelic, trippy, dmt, mushrooms, acid, lsd, metatrons cube, sacred geometry, sacred art, spiritual art, glow in the dark, rave, toronto, canadian art, neon, flourescent, luminescent, airbrush, lowbrow, pop surrealism, trippy, inner journey">
+  <meta name="author" content="Mac Peters">
   <meta name="viewport" content="width=device-width, initial-scale=1"/>
   <meta name="google-site-verification" content="ZxmnP8EXJRjiayUi1MzTxW0p9D">
 
-  <meta property="og:title" content="Macpeters Creations: Visionary and Lowbrow Psychedelic Paintings" />
-  <meta property="og:type" content="Macpeters Creations: Visionary and Lowbrow Psychedelic Paintings" />
+  <meta property="og:title" content="Macpeters Fine Art: Psychedelic and Visionary Paintings" />
   <meta property="og:url" content="http://www.macpeters.com/art.html" />
-  <meta property="og:description" content="Macpeters Creations: Visionary and Lowbrow Psychedelic Paintings" />
-  <meta property="og:site_name" content="Macpeters Creations: Visionary and Lowbrow Psychedelic Paintings" />
+  <meta property="og:description" content="Psychedelic visionary blacklight paintings featuring whimsical characters, sacred geometry, and journeys of spiritual enlightenment. Created by Toronto artist, Mac Peters." />
+  <meta property="og:site_name" content="Macpeters: Visionary, Lowbrow, Psychedelic Blacklight Paintings" />
 
   <title>Macpeters Creations: Visionary and Lowbrow Psychedelic Paintings</title>
 
@@ -74,6 +74,7 @@
   </ol>
 
   <h1>Macpeters: Fine Art</h1>
+  <h2>Visionary Psychedelic Blacklight Paintings</h2>
 
   <div class="page-description">
     I often work with a mixture of airbrush and brush paint, and I'll start with base (non glowy) colours, moving onto neons once I have the basic structure in place.
@@ -83,11 +84,11 @@
 
   <div class="art-gallery">
     <div data-bind="foreach: artImages">
-      <img class="thumbnail" src="" data-bind="attr: { src: url, alt: title }, click: $parent.selectImage">
+      <img class="thumbnail" src="" data-bind="attr: { src: url, alt: title, title: title }, click: $parent.selectImage">
     </div>
     <div>
       <div class="featured-image">
-        <img  src="" data-bind="attr: { src: currentImage().url, alt: currentImage().title }">
+        <img  src="" data-bind="attr: { src: currentImage().url, alt: currentImage().title, title: currentImage().title }">
         <h3 data-bind="text: currentImage().title">Title of Artwork</h3>
         <h4 data-bind="text: currentImage().description">description of artwork</h4>
         <div class="keywords">Keywords: <span data-bind="text: currentImage().keywords"></span></div>

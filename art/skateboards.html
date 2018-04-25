@@ -10,16 +10,16 @@
   </script>
 
   <meta charset="utf-8">
-  <meta name="description" content="Macpeters Hand Painted Skateboard Decks">
-  <meta name="keywords" content="skateboard, skateboard deck, painted, skate art, skateart, lowbrow, street art, urban art, dr. who, halloween, grateful dead, visionary">
-  <meta name="author" content="MacPeters">
+  <meta name="title" content="Macpeters Hand Painted Skateboard Decks">
+  <meta name="description" content="Hand-painted lowbrow acrylic skate art on recycled skateboard decks">
+  <meta name="keywords" content="skateboard, skateboard deck, painted, skate art, skateart, lowbrow, street art, urban art, dr. who, halloween, grateful dead, visionary, toronto, sk8, skatergirl, street decks, custom decks, recycled art, upcycled, chris dyer, urban art">
+  <meta name="author" content="Mac Peters">
   <meta name="viewport" content="width=device-width, initial-scale=1"/>
   <meta name="google-site-verification" content="ZxmnP8EXJRjiayUi1MzTxW0p9D">
 
   <meta property="og:title" content="Macpeters Hand Painted Skateboard Decks" />
-  <meta property="og:type" content="Macpeters Hand Painted Skateboard Decks" />
   <meta property="og:url" content="http://www.macpeters.com/art/skateboards.html" />
-  <meta property="og:description" content="Macpeters Paintings on Recycled Skateboard Decks" />
+  <meta property="og:description" content="Hand-painted lowbrow acrylic skate art on recycled skateboard decks" />
   <meta property="og:site_name" content="Macpeters Hand Painted Skateboard Decks" />
 
   <title>Macpeters Hand Painted Skateboard Decks</title>
@@ -75,7 +75,8 @@
     <li> <a href="http://www.macpeters.com/skateboards.html">Skate Art</a> </li>
   </ol>
 
-  <h1>Macpeters: Hand Painted Skateboard Decks</h1>
+  <h1>Hand Painted Skateboard Decks</h1>
+  <h2>Custom Painted on Request</h2>
 
   <div class="page-description">
     All of these decks are recycled - they had their day in the sun, and were ridden to near destruction.
@@ -85,11 +86,11 @@
 
   <div class="art-gallery">
     <div data-bind="foreach: skateboards">
-      <img class="thumbnail" src="" data-bind="attr: { src: url, alt: title }, click: $parent.selectImage">
+      <img class="thumbnail" src="" data-bind="attr: { src: url, alt: title, title: title }, click: $parent.selectImage">
     </div>
     <div>
       <div class="featured-image">
-        <img  src="" data-bind="attr: { src: currentImage().url, alt: currentImage().title }">
+        <img  src="" data-bind="attr: { src: currentImage().url, alt: currentImage().title, title: currentImage().title }">
         <h3 data-bind="text: currentImage().title">Title of Artwork</h3>
         <h4 data-bind="text: currentImage().description">description of artwork</h4>
         <div class="keywords">Keywords: <span data-bind="text: currentImage().keywords"></span></div>

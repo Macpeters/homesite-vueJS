@@ -42,35 +42,35 @@ var SlideShow = function(images) {
 var base_url = "images/slideshow/macpeters_"
 var slideImages = [
   {
-    url: base_url + "fineArt.png",
-    alt: "Macpeters Fine Art",
-    title: "Fine Art",
-    link: "art.html#fineArt"
-  },
-  {
-    url: base_url + "artGifts.png",
-    alt: "Macpeters Art Gifts: Pillows, Mugs, Tshirts, Phone Cases, and more",
-    title: "Art Gifts",
-    link: "artGifts.html"
-  },
-  {
-    url: base_url + "games.png",
-    alt: "Macpeters Independant Web and Mobile Games",
-    title: "Web and Mobile Games",
-    link: "dev.html#games"
-  },
-  {
-    url: base_url + "murals.png",
-    alt: "Macpeters Indoor and Outdoor Murals",
-    title: "Murals",
-    link: "art.html#graf"
-  },
-  {
     url: base_url + "hiddenDreamsTarot.png",
     alt: "Macpeters: Hidden Dreams Tarot Deck",
     title: "Macpeters: Hidden Dreams Tarot Deck",
     link: "tarot.html"
   },
+  {
+    url: base_url + "fineArt.png",
+    alt: "Macpeters Fine Art",
+    title: "Fine Art",
+    link: "art.html#fineArt"
+  },
+  // {
+  //   url: base_url + "artGifts.png",
+  //   alt: "Macpeters Art Gifts: Pillows, Mugs, Tshirts, Phone Cases, and more",
+  //   title: "Art Gifts",
+  //   link: "artGifts.html"
+  // },
+  // {
+  //   url: base_url + "games.png",
+  //   alt: "Macpeters Independant Web and Mobile Games",
+  //   title: "Web and Mobile Games",
+  //   link: "dev.html#games"
+  // },
+  // {
+  //   url: base_url + "murals.png",
+  //   alt: "Macpeters Indoor and Outdoor Murals",
+  //   title: "Murals",
+  //   link: "art.html#graf"
+  // },
   {
     url: base_url + "paintedSkateboards.png",
     alt: "Painted Skateboard Decks",

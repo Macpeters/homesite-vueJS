@@ -50,6 +50,12 @@ var cartoonImages = [
     keywords: base_keywords + "canary, songbird, yellow, yellow canary, monochromatic art, color collective, colour study"
   },
   {
+    url: base_url + "spock.png",
+    title: "Spock",
+    description: "Monchromatic drawing of the popular Star Trek Vulcan",
+    keywords: base_keywords + "festival, music festival, edm, heart, hand heart, frog, plur"
+  },
+  {
     url: base_url + "xenomorph.png",
     title: "Xenomorph",
     description: "Always fashionable in her... um...  insect armour exoskeleton",
